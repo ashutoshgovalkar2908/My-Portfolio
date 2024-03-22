@@ -1,0 +1,458 @@
+@media (min-width: 769px) and (max-width: 992px) {
+    .heading-primary {
+        font-size: 2.3rem;
+    }
+
+    .text {
+        font-size: 1.3rem;
+    }
+
+    .nav-menu2 {
+        display: none;
+    }
+    .inner-box{
+        width: 100%;
+    }
+    .upper-footer{
+        margin-bottom: 15px;
+    }
+    .upper-footer-name,.upper-footer-social{
+        padding: 0;
+    }
+    .upper-footer-name{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:768px) {
+    .nav {
+        height: 75px;
+    }
+
+    .logo-name,
+    .nav-menu {
+        height: 70px;
+    }
+
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .name {
+        font-size: 0.92rem;
+    }
+
+    .nav-menu ul li a {
+        font-size: 0.85rem;
+    }
+
+    .nav-menu2 {
+        display: none;
+    }
+
+    .header-links {
+        margin-inline: 5px;
+    }
+
+    #social-link-section {
+        width: 3.4rem;
+    }
+
+    #info-section {
+        width: calc(100% - 3.8rem);
+    }
+
+    #info-section .small-info .myname .heading-primary {
+        font-size: 2rem;
+    }
+
+    .info {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .info .text {
+        padding-inline: 12px;
+        font-size: 1.2rem;
+    }
+
+    h3 {
+        font-size: 1.7rem;
+    }
+
+    .box2 {
+        flex-direction: column;
+    }
+
+    .main-about {
+        width: 100%;
+        margin: 20px auto;
+        padding-inline: 50px;
+    }
+
+    .main-about p {
+        font-size: 0.96rem;
+    }
+
+    .short-info {
+        font-size: 0.99rem;
+        padding-inline: 20px;
+    }
+    #contact{
+        padding-inline: 4rem;
+    }
+    .inner-box {
+        width: 100%;
+    }
+    .upper-footer{
+        margin-bottom: 15px;
+    }
+    .upper-footer-name,.upper-footer-social{
+        padding: 0;
+    }
+    .upper-footer-name{
+        width: 70%;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:640px) {
+    .nav-menu {
+        display: none;
+    }
+    .nav {
+        height: 75px;
+        justify-content: space-between;
+        padding-inline: 10px;
+    }
+
+    .logo-name {
+        justify-content: flex-start;
+        padding-inline: 0;
+        width: 12em;
+    }
+
+    .logo-name span {
+        font-size: 0.9rem;
+    }
+
+    .nav .hamberger-icon {
+        display: block;
+    }
+
+    #social-link-section {
+        display: none;
+    }
+
+    #info-section {
+        width: 100%;
+    }
+
+    .small-info .myname h1 {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+
+    .info {
+        width: 100%;
+        padding-inline: 10px;
+        margin-top: 20px;
+    }
+
+    .small-info .info .text {
+        font-size: 0.98rem;
+    }
+
+    .heading {
+        width: 100%;
+        margin: 0;
+        padding-inline: 10px;
+    }
+
+    .heading h2 {
+        font-size: 1.7rem;
+    }
+
+    .spn {
+        width: 30px;
+    }
+
+    .short-info {
+        width: 100%;
+        font-size: 0.8rem;
+        font-weight: 700;
+        padding-inline: 24px;
+        height: auto;
+    }
+
+    .box2 {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    .main-about {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding-inline: 50px;
+    }
+
+    .main-about h3 {
+        font-size: 1.2rem;
+    }
+
+    #p1 {
+        margin-top: 15px;
+    }
+
+    .main-about .para {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 0.9rem;
+        font-weight: 400;
+    }
+
+    .skills {
+        width: 100%;
+        justify-content: center;
+        align-content: baseline;
+        gap: 10px;
+        font-size: 0.8rem;
+        margin-top: 15px;
+    }
+
+    .my-skills {
+        margin-top: 30px;
+    }
+
+    .skills div {
+        height: 43px;
+    }
+
+    .inner-box {
+        width: 90%;
+    }
+    #contact{
+        padding: 5rem 0;
+    }
+    .contact-info div label {
+        font-size: 0.9rem;
+    }
+
+    .contact-info div input {
+        font-size: 0.8rem;
+    }
+
+    .contact-info div input[type="submit"] {
+        width: 100%;
+    }
+    .footer-container{
+        padding: 0;
+    }
+    .upper-footer{
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .upper-footer-name{
+        padding: 10px 0;
+        width: 100%;
+        order: 2;
+    }
+    .upper-footer-name h2,.upper-footer-social h2{
+        font-size: 1.15rem;
+        text-align: left;
+    }
+    .upper-footer-name p{
+        font-size: 0.8rem;
+        margin-top: 1.1rem;
+    }
+    .upper-footer-social{
+        padding-top: 20px;
+    }
+    .footer-social a img{
+        width: 28px;
+        margin: 0 10px 0 0 ;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .nav {
+        height: 75px;
+        justify-content: space-between;
+        padding-inline: 10px;
+    }
+
+    .logo-name {
+        justify-content: flex-start;
+        padding-inline: 0;
+        width: 12em;
+    }
+
+    .logo-name span {
+        font-size: 0.9rem;
+    }
+
+    .logo {
+        width: 3.3em;
+        height: 3.3em;
+        margin-right: 5px;
+    }
+
+    .nav .hamberger-icon {
+        display: block;
+    }
+
+    .nav .hamberger-icon #open-icon {
+        padding: 4px;
+    }
+
+    #social-link-section {
+        display: none;
+    }
+
+    #info-section {
+        width: 100%;
+    }
+
+    .small-info .myname h1 {
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .info {
+        width: 100%;
+        padding-inline: 10px;
+        margin-top: 20px;
+    }
+
+    .small-info .info .text {
+        font-size: 0.98rem;
+        width: 100%;
+    }
+
+    .about-container {
+        padding: 4.8rem 0 0 0;
+    }
+
+    .heading {
+        width: 100%;
+        margin: 0;
+        padding-inline: 10px;
+    }
+
+    .heading h2 {
+        font-size: 1.4rem;
+    }
+
+    .spn {
+        width: 30px;
+    }
+
+    .short-info {
+        width: 100%;
+        font-size: 0.75rem;
+        font-weight: 600;
+        padding-inline: 10px;
+        margin-top: 10px;
+        height: auto;
+    }
+
+    .box2 {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        column-gap: 10px;
+    }
+
+    .main-about {
+        width: 100%;
+        margin: 0;
+        padding-inline: 30px;
+    }
+
+    .main-about h3 {
+        font-size: 1.2rem;
+    }
+
+    #p1 {
+        margin-top: 10px;
+    }
+
+    .main-about .para {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 0.8rem;
+        font-weight: 400;
+    }
+
+    .my-skills {
+        margin-top: 30px;
+    }
+
+    .skills {
+        width: 100%;
+        justify-content: center;
+        align-content: baseline;
+        /* gap: 10px; */
+        font-size: 0.8rem;
+        margin-top: 20px;
+    }
+
+    .skills div {
+        height: 44px;
+    }
+
+    .inner-box {
+        width: 90%;
+    }
+
+    #contact{
+        padding: 4.8rem 0;
+    }
+    .contact-info div label {
+        font-size: 0.9rem;
+    }
+
+    .contact-info div input,
+    .contact-info div textarea {
+        font-size: 0.8rem;
+    }
+
+    .contact-info div input[type="submit"] {
+        width: 100%;
+    }
+    .footer-container{
+        padding: 0;
+    }
+    .upper-footer{
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .upper-footer-name{
+        padding: 10px 0;
+        width: 100%;
+        order: 2;
+    }
+    .upper-footer-name h2,.upper-footer-social h2{
+        font-size: 1.15rem;
+        text-align: left;
+    }
+    .upper-footer-name p{
+        font-size: 0.8rem;
+        margin-top: 1.1rem;
+    }
+    .upper-footer-social{
+        padding-top: 20px;
+    }
+    .footer-social a img{
+        width: 28px;
+        margin: 0 10px 0 0 ;
+    }
+ 
+}
