@@ -5,6 +5,7 @@
 
     .text {
         font-size: 1.3rem;
+        padding-inline: 13vw;
     }
 
     .nav-menu2 {
@@ -73,7 +74,7 @@
     }
 
     .info .text {
-        padding-inline: 12px;
+        padding-inline: 7vw;
         font-size: 1.2rem;
     }
 
@@ -149,7 +150,7 @@
     }
 
     .small-info .myname h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         letter-spacing: 2px;
     }
 
@@ -161,6 +162,7 @@
 
     .small-info .info .text {
         font-size: 0.98rem;
+        padding-inline: 5vw;
     }
 
     .heading {
@@ -334,6 +336,7 @@
     .small-info .info .text {
         font-size: 0.98rem;
         width: 100%;
+        padding-inline: 0vw;
     }
 
     .about-container {
