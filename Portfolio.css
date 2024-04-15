@@ -418,7 +418,7 @@ p{
     object-fit: cover;
 }
 .project-name-details{
-    margin: auto;
+    padding-block: 25px;
     text-align: start;
 }
 .project-name{
