@@ -417,6 +417,35 @@ p{
     width: 100%;
     object-fit: cover;
 }
+.project-name-details{
+    margin: auto;
+    text-align: start;
+}
+.project-name{
+    font-size: 1.5rem;
+    text-align: start;
+    padding-block: 15px;
+}
+.about-project{
+    text-align: start;
+    padding-block: 10px;
+}
+.project-button{
+    padding-block: 15px;
+}
+.project-button button{
+    padding: 17px 50px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color: var(--bg-purple);
+    border: none;
+}
+.project-button button a{
+    color: #ffffff;
+}
 
 /* Contact Section Page */
 #contact {
