@@ -398,37 +398,40 @@ p{
     margin: auto;
     padding: 20px;
 }
-.project-image ,.project-detail{
-    padding: 20px;
-    /* border: 1px solid red; */
+.project-image {
+    padding: 7px 20px;
+}
+.project-detail{
+    padding: 7px 20px;
 }
 .grid-container{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    gap: 20px;
+    gap: 50px 20px;
 }
 .image{
     width: 70%;
     margin: auto;
-    /* height: 400px;
-    border: 1px solid #4d4a4a; */
+    padding-block:17px ;
 }
 .image img{
     width: 100%;
     object-fit: cover;
 }
 .project-name-details{
-    padding-block: 25px;
     text-align: start;
 }
 .project-name{
     font-size: 1.5rem;
     text-align: start;
-    padding-block: 15px;
+    padding-block: 10px;
 }
 .about-project{
     text-align: start;
     padding-block: 10px;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 17px;
 }
 .project-button{
     padding-block: 15px;
