@@ -393,24 +393,27 @@ p{
     padding-top: var(--section-padding);
     font-family: "Roboto", sans-serif;
 }
+.project-wrapper{
+    flex-direction: column;
+    row-gap: 4rem;
+}
 .projects{
     width: 90%;
     margin: auto;
     padding: 20px;
+}
+.project-outer{
+    justify-content: center;
 }
 .project-image {
     padding: 7px 20px;
 }
 .project-detail{
     padding: 7px 20px;
-}
-.grid-container{
-    display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    gap: 50px 20px;
+    width: 100%;
 }
 .image{
-    width: 70%;
+    width: 80%;
     margin: auto;
     padding-block:17px;
 }
@@ -431,7 +434,7 @@ p{
     padding-block: 10px;
     line-height: 1.5;
     font-weight: 400;
-    font-size: 17px;
+    font-size: 1.3vw;
 }
 .project-button{
     padding-block: 15px;
