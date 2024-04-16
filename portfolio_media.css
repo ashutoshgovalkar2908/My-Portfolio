@@ -23,6 +23,19 @@
     .upper-footer-name{
         width: 60%;
     }
+    .project-outer{
+        flex-direction: column;
+    }
+    .project-name-details{
+        text-align: center;
+    }
+    .project-name{
+        text-align: center;
+    }
+    .about-project{
+        text-align: center;
+        font-size: 2vw;
+    }
 }
 
 @media screen and (min-width:640px) and (max-width:768px) {
@@ -114,6 +127,19 @@
     }
     .upper-footer-name{
         width: 70%;
+    }
+    .project-outer{
+        flex-direction: column;
+    }
+    .project-name-details{
+        text-align: center;
+    }
+    .project-name{
+        text-align: center;
+    }
+    .about-project{
+        text-align: center;
+        font-size: 2vw;
     }
 }
 
@@ -235,6 +261,28 @@
 
     .inner-box {
         width: 90%;
+    }
+    .project-outer{
+        flex-direction: column;
+    }
+    .project-name-details{
+        text-align: center;
+    }
+    .project-name{
+        text-align: center;
+    }
+    .project-image{
+        padding: 7px;
+    }
+    .image{
+        width: 100%;
+    }
+    .project-detail{
+        padding: 7px;
+    }
+    .about-project{
+        text-align: center;
+        font-size: 3vw;
     }
     #contact{
         padding: 5rem 0;
@@ -414,7 +462,33 @@
     .inner-box {
         width: 90%;
     }
-
+    .projects{
+        width: 100%;
+        padding: 10px;
+    }
+    .project-outer{
+        flex-direction: column;
+    }
+    .project-name-details{
+        text-align: center;
+    }
+    .project-image{
+        padding: 0;
+    }
+    .image{
+        width: 90%;
+    }
+    .project-detail{
+        padding: 7px;
+    }
+    .project-name{
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .about-project{
+        text-align: center;
+        font-size: 1rem;
+    }
     #contact{
         padding: 4.8rem 0;
     }
