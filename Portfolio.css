@@ -448,6 +448,11 @@ p{
     text-transform: uppercase;
     background-color: var(--bg-purple);
     border: none;
+    transition: .33s ease-in-out;
+}
+.project-button button:hover{
+    transform: translateY(-5px);
+    background-color:rgb(142, 69, 237) ;
 }
 .project-button button a{
     color: #ffffff;
