@@ -452,7 +452,7 @@ p{
 }
 .project-button button:hover{
     transform: translateY(-5px);
-    background-color:rgb(142, 69, 237) ;
+    background-color:rgb(141, 64, 242) ;
 }
 .project-button button a{
     color: #ffffff;
