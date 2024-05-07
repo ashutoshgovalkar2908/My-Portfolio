@@ -14,29 +14,18 @@ function hideMenu1(){
     hide1.style.display="none";
 }
 
+// function for categories-button
 document.querySelector("#categories-button").addEventListener("click",displayMenu2);
 
 function displayMenu2(){
     let menu2 = document.querySelector("#menu2");
-    menu2.style.display="block";
+    if(menu2.style.display === "none" || menu2.style.display === ""){
+        menu2.style.display = "block"
+    }else{
+        menu2.style.display="none";
+    }    
 }
 
-document.querySelector("#colse2").addEventListener("click",hideMenu2);
-
-function hideMenu2(){
-    let hide2 = document.querySelector("#menu2");
-    hide2.style.display="none";
-}
-
-// document.querySelector("#search-baar").addEventListener("mouseover",toggleButton);
-// document.querySelector("#search-baar").addEventListener("mouseout",toggleButtonOut);
-
-// function toggleButton(){
-//     let searchButton = document.querySelector("#search-button");
-//     searchButton.style.borderRadius ="0px 50px 50px 0px";
-// }
-
-// functions for country and favourite icons for toggle after mouseover and mouseout
 
 // functions for country icon
 document.querySelector("#country").addEventListener("mouseover",toggleCountry);
@@ -64,3 +53,45 @@ function toggleFavouriteOut(){
     let country = document.querySelector("#toggle-favourite");
     country.style.display="none";
 }
+
+// function for footer menu open and hide
+
+document.querySelector("#openShop").addEventListener("click",openShop);
+document.querySelector("#sell").addEventListener("click",openSell);
+document.querySelector("#about").addEventListener("click",openAbout);
+document.querySelector("#help").addEventListener("click",openHelp);
+
+function openShop() {
+    let shopOption = document.getElementById("shop-option");
+    if (shopOption.style.display === "none" || shopOption.style.display === "") {
+        shopOption.style.display = "block";
+    } else {
+        shopOption.style.display = "none";
+    }
+}
+function openSell(){
+    let sellOption = document.getElementById("sell-option");
+    if (sellOption.style.display === "none" || sellOption.style.display === "") {
+        sellOption.style.display = "block";
+    } else {
+        sellOption.style.display = "none";
+    }
+}
+
+function openAbout(){
+    let aboutOption = document.getElementById("about-option");
+    if (aboutOption.style.display === "none" || aboutOption.style.display === "") {
+        aboutOption.style.display = "block";
+    } else {
+        aboutOption.style.display = "none";
+    }
+}
+function openHelp(){
+    let helpOption = document.getElementById("help-privacy");
+    if (helpOption.style.display === "none" || helpOption.style.display === "") {
+        helpOption.style.display = "block";
+    } else {
+        helpOption.style.display = "none";
+    }
+}
+
