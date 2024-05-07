@@ -38,9 +38,9 @@
                 </div>
                 <!-- search baar -->
                 <div class="w-[54rem] hidden md:block" id="search-baar">
-                    <form action="" class="w-full relative">
+                    <form action="#" class="w-full relative">
                         <div>
-                            <input type="text" name="" id=""
+                            <input type="text" name="search" id="search"
                                 class="border-2 rounded-3xl border-black py-2.5 px-5 w-full text-[16px] font-normal tracking-wide"
                                 placeholder="Search for anything">
                             <span
@@ -53,7 +53,8 @@
                                                 <path fill-rule="evenodd" clip-rule="evenodd"
                                                     d="M10.5 19a8.464 8.464 0 0 0 5.262-1.824l4.864 4.864 1.415-1.414-4.865-4.865A8.5 8.5 0 1 0 10.5 19Zm0-2a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13Z">
                                                 </path>
-                                            </svg></span>
+                                            </svg>
+                                        </span>
                                     </button>
                                 </div>
                             </span>
@@ -71,14 +72,17 @@
                     <!-- Cart,Favourite and country -->
                     <div>
                         <ul class="flex items-center">
-                            <li class="w-12 h-12 p-3 hover:bg-[#CCEBFF] rounded-full" id="country">
+                            <li class="w-12 h-12 p-3 hover:bg-[#CCEBFF] rounded-full transition duration-100 ease-in-out" id="country">
                                 <span>
                                     <a href="#">
-                                    <img src="Assests/flag.webp" alt="" class="w-7 border-solid border-2 border-black rounded-full">
+                                    <img src="Assests/flag.webp" alt="country-flag" class="w-7 border-solid border-2 border-black rounded-full">
                                     </a>
                                 </span>
+                                <div class="w-[52px] p-2 bg-blue-900 rounded-md text-white relative -left-4 top-4 z-50 hidden" id="toggle-country">
+                                    <h2>India</h2>
+                                </div>
                             </li>
-                            <li class="w-12 h-12 p-3 hover:bg-[#CCEBFF] rounded-full" id="Favourite">
+                            <li class="w-12 h-12 p-3 hover:bg-[#CCEBFF] rounded-full transition duration-100 ease-in-out" id="Favourite">
                                 <span>
                                     <a href="#">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"
@@ -88,7 +92,11 @@
                                             </path>
                                         </svg>
                                     </a>
-                                </span></li>
+                                </span>
+                                <div class="w-[80px] p-2 bg-blue-900 rounded-md text-white relative -left-7 top-4 hidden" id="toggle-favourite">
+                                    <h2>Favourite</h2>
+                                </div>
+                            </li>
                             <li class="w-12 h-12 p-3 hover:bg-[#CCEBFF] rounded-full">
                                 <span>
                                     <a href="#">
@@ -111,30 +119,35 @@
 
             <!-- menu icon and search baar starts for small devices-->
             <div class="flex justify-start items-center gap-3 md:justify-center">
+                <!-- hamburger icon -->
                 <div class="w-8 md:hidden" id="hamburger">
-                    <img src="Assests/menu-bar.png" alt="">
+                    <img src="Assests/menu-bar.png" alt="hamburger-icon">
                 </div>
+
+                <!-- search baar -->
                 <div class="w-[100%] md:hidden sm:w-[100%]">
-                    <form action="" class="w-full">
-                        <input type="text"
-                            class="border-2 rounded-3xl border-black py-2.5 px-5 w-full font-normal text-[16px]"
+                    <form action="#" class="w-full">
+                        <input type="text" class="border-2 rounded-3xl border-black py-2.5 px-5 w-full font-normal text-[16px]"
                             placeholder="Search for anything">
-                        <span
-                            class="w-10 mt-[4.4px] inline-block absolute right-3 hover:bg-orange-300 hover:rounded-r-full transition ease-out hover:duration-500">
+                        <span class="w-10 mt-[4.4px] inline-block absolute right-3 hover:bg-orange-300 hover:rounded-r-full transition ease-out hover:duration-500">
                             <div
                                 class="px-1.5 pt-0.5 mr-0.5 bg-orange-500 rounded-full hover:bg-orange-300 hover:transition-all hover:ease-in-out hover:duration-500">
                                 <button class="pt-1.5 pl-0.5">
-                                    <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"
                                             focusable="false" class=" w-6 invert">
                                             <path fill-rule="evenodd" clip-rule="evenodd"
                                                 d="M10.5 19a8.464 8.464 0 0 0 5.262-1.824l4.864 4.864 1.415-1.414-4.865-4.865A8.5 8.5 0 1 0 10.5 19Zm0-2a6.5 6.5 0 1 0 0-13 6.5 6.5 0 0 0 0 13Z">
                                             </path>
-                                        </svg></span>
+                                        </svg>
+                                    </span>
                                 </button>
                             </div>
                         </span>
                     </form>
                 </div>
+
+                <!-- navbaar catagories menu's start-->
                 <div class="mt-0.5 hidden md:block">
                     <ul class="flex justify-center">
                         <li
@@ -159,17 +172,9 @@
                         </li>
                     </ul>
                 </div>
+                <!-- navbaar catagories menu's Ends-->
             </div>
             <!-- menu icon and search baar Ends for small devices-->
-
-            <div class="flex gap-5 absolute right-4 top-12 xl:right-36 xl:top-16">
-                <div class="p-2 bg-blue-900 rounded-md text-white relative left-3 xl:-left-14" id="toggle-country" hidden>
-                    <h2>India</h2>
-                </div>
-                <div class="p-2 bg-blue-900 rounded-md text-white relative  xl:-right-2" id="toggle-favourite" hidden>
-                    <h2>Favourite</h2>
-                </div>
-            </div>
         </nav>
 
         <!-- nav menu's for small devices starts here -->
@@ -205,43 +210,43 @@
                         <li class="py-2">
                             <button class="flex justify-between font-semibold w-full">
                                 <h2>Jewellery & Accessories</h2>
-                                <img src="Assests/next.png" alt="" class="w-4">
+                                <img src="Assests/next.png" alt="next-arrow" class="w-4">
                             </button>
                         </li>
                         <li class="py-2">
                             <button class="flex justify-between font-semibold w-full">
                                 <h2>Clothing & Shoes</h2>
-                                <img src="Assests/next.png" alt="" class="w-4">
+                                <img src="Assests/next.png" alt="next-arrow" class="w-4">
                             </button>
                         </li>
                         <li class="py-2">
                             <button class="flex justify-between font-semibold w-full">
                                 <h2>Home & Living</h2>
-                                <img src="Assests/next.png" alt="" class="w-4">
+                                <img src="Assests/next.png" alt="next-arrow" class="w-4">
                             </button>
                         </li>
                         <li class="py-2">
                             <button class="flex justify-between font-semibold w-full">
                                 <h2>Wedding & Party</h2>
-                                <img src="Assests/next.png" alt="" class="w-4">
+                                <img src="Assests/next.png" alt="next-arrow" class="w-4">
                             </button>
                         </li>
                         <li class="py-2">
                             <button class="flex justify-between font-semibold w-full">
                                 <h2>Toys & Entertainments</h2>
-                                <img src="Assests/next.png" alt="" class="w-4">
+                                <img src="Assests/next.png" alt="next-arrow" class="w-4">
                             </button>
                         </li>
                         <li class="py-2">
                             <button class="flex justify-between font-semibold w-full">
                                 <h2>Art & Collectibles</h2>
-                                <img src="Assests/next.png" alt="" class="w-4">
+                                <img src="Assests/next.png" alt="next-arrow" class="w-4">
                             </button>
                         </li>
                         <li class="py-2">
                             <button class="flex justify-between font-semibold w-full">
                                 <h2>Craft Supplies & Tools</h2>
-                                <img src="Assests/next.png" alt="" class="w-4">
+                                <img src="Assests/next.png" alt="next-arrow" class="w-4">
                             </button>
                         </li>
                     </ul>
@@ -342,11 +347,12 @@
         <!-- nav menu's for medium devices Ends here-->
         
     </header>
-    <!-- navbaar ends here -->
+    <!-- navbaar and header ends here -->
 
     <!-- main-section starts -->
     <main id="main">
         <div class="px-2 py-4 md:px-12 md:py-7 lg:px-20 max-w-full overflow-hidden">
+
             <!-- HomePage Search Bubbles Section Start -->
             <section class="flex justify-center flex-col items-center space-y-3 mt-1.5 mb-12 px-3">
                 <div>
@@ -357,7 +363,8 @@
                     <ul class="flex flex-wrap md:space-x-12 justify-evenly">
                         <li class="w-24 md:w-32 p-1.5 hover: hover:text-[#595959]">
                             <a href="#" class="hover:border-b-2 border-black">
-                                <img src="Assests/decor.webp" alt=""
+                                <img src="Assests/decor.webp" alt=" Decor
+                                    Finds On Sale image"
                                     class="rounded-full w-full border-2 hover:scale-110 transition-all shadow-xl">
                                 <h4 class="md:p-1 text-[12px] md:text-base text-center font-semibold mt-1 leading-5">
                                     Decor
@@ -367,7 +374,7 @@
                         </li>
                         <li class="w-24 md:w-32 p-1.5 hover: hover:text-[#595959]">
                             <a href="#">
-                                <img src="Assests/outdoor.webp" alt=""
+                                <img src="Assests/outdoor.webp" alt="Outdoor Finds On Sale-image"
                                     class="rounded-full w-full border-2 hover:scale-110 transition-all shadow-2xl">
                                 <h4 class="p-md:0.5 text-[12px] md:text-base text-center font-semibold mt-1 leading-5">
                                     Outdoor Finds On Sale
@@ -376,7 +383,8 @@
                         </li>
                         <li class="w-24 md:w-32 p-1.5 hover: hover:text-[#595959]">
                             <a href="#">
-                                <img src="Assests/kitchen.webp" alt=""
+                                <img src="Assests/kitchen.webp" alt="Kitchen
+                                Finds On Sale-image"
                                     class="rounded-full w-full border-2 hover:scale-110 transition-all shadow-2xl">
                                 <h4 class="md:p-1 text-[12px] md:text-base text-center font-semibold mt-1 leading-5">
                                     Kitchen
@@ -386,7 +394,7 @@
                         </li>
                         <li class="w-24 md:w-32 p-1.5  hover: hover:text-[#595959]">
                             <a href="#">
-                                <img src="Assests/weeeding.webp" alt=""
+                                <img src="Assests/weeeding.webp" alt="Wedding Gifts-image"
                                     class="rounded-full w-full border-2 hover:scale-110 transition-all shadow-2xl">
                                 <h4 class="p-md:0.5 text-[12px] md:text-base text-center font-semibold mt-1 leading-5">
                                     Wedding Gifts
@@ -395,7 +403,8 @@
                         </li>
                         <li class="w-24 md:w-32 p-1.5 hover: hover:text-[#595959]">
                             <a href="#">
-                                <img src="Assests/Easter.webp" alt=""
+                                <img src="Assests/Easter.webp" alt="Easter
+                                Gifts-image"
                                     class="rounded-full w-full border-2 hover:scale-110 transition-all shadow-2xl">
                                 <h4 class="md:p-1 text-[12px] md:text-base text-center font-semibold mt-1 leading-5">
                                     Easter
@@ -405,7 +414,8 @@
                         </li>
                         <li class="w-24 md:w-32 p-1.5 hover: hover:text-[#595959]">
                             <a href="#">
-                                <img src="Assests/Giftson sale.webp" alt=""
+                                <img src="Assests/Giftson sale.webp" alt="  Gifts
+                                On Sale-image"
                                     class="rounded-full w-full border-2 hover:scale-110 transition-all shadow-2xl">
                                 <h4 class="md:p-1 text-[12px] md:text-base text-center font-semibold mt-1 leading-5">
                                     Gifts
@@ -429,7 +439,7 @@
                         </div>
                         <div class="md:px-6">
                             <p class="text-[13.1px] text-[#595959] tracking-wide text-center">Show more from the
-                                <a href="" class="underline">ProductWhistles</a>shop
+                                <a href="#" class="underline">ProductWhistles</a>shop
                             </p>
                         </div>
                     </div>
@@ -439,70 +449,70 @@
                             <!-- <span class="inline-block relative left-1 top-1">
                                 <img src="Assests/heart.png" alt="" class="w-8 bg-white p-2">
                             </span> -->
-                            <img class="rounded-md h-full w-full" src="Assests/viewed1.avif" alt="">
+                            <img class="rounded-md h-full w-full" src="Assests/viewed1.avif" alt="recently viwed-image">
                             <button
                                 class="px-1.5 py-1 rounded-2xl text-sm font-semibold bg-white relative bottom-8 left-2">₹307
                                 <span class="line-through font-light">₹ 353</span>
                             </button>
                         </div>
                         <div class="px-1  w-full h-full  md:h-[169.475px]">
-                            <img class="w-full h-full rounded-md" src="Assests/viewed2.avif" alt="">
+                            <img class="w-full h-full rounded-md" src="Assests/viewed2.avif" alt="recently viwed-image">
                             <button
                                 class="px-1.5 py-1 rounded-2xl text-sm font-semibold bg-white relative bottom-8 left-2">₹
                                 94<span class="line-through font-light">₹ 117</span>
                             </button>
                         </div>
                         <div class="px-1  w-full h-full sm:hidden md:hidden lg:block md:h-[169.475px]">
-                            <img class="h-full w-full rounded-md" src="Assests/viewed2.avif" alt="">
+                            <img class="h-full w-full rounded-md" src="Assests/viewed2.avif" alt="recently viwed-image">
                             <button
                                 class="px-1.5 py-1 rounded-2xl text-sm font-semibold bg-white relative bottom-8 left-2">₹
                                 94<span class="line-through font-light">₹ 117</span>
                             </button>
                         </div>
                         <div class="px-1  w-full h-full  md:h-[169.475px]">
-                            <img class="h-full w-full rounded-md" src="Assests/viewed4.avif" alt="">
+                            <img class="h-full w-full rounded-md" src="Assests/viewed4.avif" alt="recently viwed-image">
                             <button
                                 class="px-1.5 py-1 rounded-2xl text-sm font-semibold bg-white relative bottom-8 left-2">₹383
                                 <span class="line-through font-light">₹ 1534</span>
                             </button>
                         </div>
                         <div class="px-1  w-full h-full  md:h-[169.475px]">
-                            <img class="h-full w-full rounded-md" src="Assests/viewed7.avif" alt="">
+                            <img class="h-full w-full rounded-md" src="Assests/viewed7.avif" alt="recently viwed-image">
                             <button
                                 class="px-1.5 py-1 rounded-2xl text-sm font-semibold bg-white relative bottom-8 left-2">₹118
                                 <span class="line-through font-light">₹ 148</span>
                             </button>
                         </div>
                         <div class="px-1  w-full h-full  md:h-[169.475px]">
-                            <img class="h-full w-full rounded-md" src="Assests/viewed1.avif" alt="">
+                            <img class="h-full w-full rounded-md" src="Assests/viewed1.avif" alt="recently viwed-image">
                             <button
                                 class="px-1.5 py-1 rounded-2xl text-sm font-semibold bg-white relative bottom-8 left-2">₹307
                                 <span class="line-through font-light">₹ 353</span>
                             </button>
                         </div>
                         <div class="px-1  w-full h-full  md:h-[169.475px]">
-                            <img class="h-full w-full rounded-md" src="Assests/viewed8.avif" alt="">
+                            <img class="h-full w-full rounded-md" src="Assests/viewed8.avif" alt="recently viwed-image">
                             <button
                                 class="px-1.5 py-1 rounded-2xl text-sm font-semibold bg-white relative bottom-8 left-2">₹872
                                 <span class="line-through font-light">₹ 1002</span>
                             </button>
                         </div>
                         <div class="px-1  w-full h-full  md:h-[169.475px]">
-                            <img class="h-full w-full rounded-md" src="Assests/viewed9.avif" alt="">
+                            <img class="h-full w-full rounded-md" src="Assests/viewed9.avif" alt="recently viwed-image">
                             <button
                                 class="px-1.5 py-1 rounded-2xl text-sm font-semibold bg-white relative bottom-8 left-2">₹1488
                                 <span class="line-through font-light">₹ 1710</span>
                             </button>
                         </div>
                         <div class="px-1  w-full h-full sm:hidden md:hidden lg:block md:h-[169.475px]">
-                            <img class="h-full w-full rounded-md" src="Assests/viewed10.avif" alt="">
+                            <img class="h-full w-full rounded-md" src="Assests/viewed10.avif" alt="recently viwed-image">
                             <button
                                 class="px-1.5 py-1 rounded-2xl text-sm font-semibold bg-white relative bottom-8 left-2">₹41063
                                 <span class="line-through font-light">₹ 47199</span>
                             </button>
                         </div>
                         <div class="px-1  w-full h-full  md:h-[169.475px]">
-                            <img class="h-full w-full rounded-md" src="Assests/viewed11.webp" alt="">
+                            <img class="h-full w-full rounded-md" src="Assests/viewed11.webp" alt="recently viwed-image">
                             <button
                                 class="px-1.5 py-1 rounded-2xl text-sm font-semibold bg-white relative bottom-8 left-2">₹7185
                                 <span class="line-through font-light">₹ 8259</span>
@@ -520,10 +530,10 @@
                         </div>
                         <div class="flex">
                             <div class="px-1 md:h-16 w-20">
-                                <img class="rounded-md h-full w-full" src="Assests/viewed1.avif" alt="">
+                                <img class="rounded-md h-full w-full" src="Assests/viewed1.avif" alt="becaused you viewed-image">
                             </div>
                             <div class="px-1 md:h-16 w-20">
-                                <img class="rounded-md h-full w-full" src="Assests/viewed1.avif" alt="">
+                                <img class="rounded-md h-full w-full" src="Assests/viewed1.avif" alt="becaused you viewed-image">
                             </div>
                         </div>
 
@@ -531,7 +541,7 @@
                     <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-y-4 gap-x-2 mt-3 md:m-3">
                         <div
                             class="px-1 w-full h-full sm:col-span-1 sm:row-span-3 sm:h-full md:h-full md:col-span-2 md:row-span-2">
-                            <img class="rounded-md h-full w-full" src="Assests/becausedViewed1.avif" alt="">
+                            <img class="rounded-md h-full w-full" src="Assests/becausedViewed1.avif" alt="becaused you viewed-image">
                             <button
                                 class="px-1.5 py-1 rounded-2xl text-sm font-semibold bg-white relative bottom-8 left-2">₹
                                 652
@@ -539,42 +549,42 @@
                             </button>
                         </div>
                         <div class="px-1 w-full h-full ">
-                            <img class="w-full h-full rounded-md" src="Assests/becausedViewed2.avif" alt="">
+                            <img class="w-full h-full rounded-md" src="Assests/becausedViewed2.avif" alt="becaused you viewed-image">
                             <button
                                 class="px-1.5 py-1 rounded-2xl text-sm font-semibold bg-white relative bottom-8 left-2">₹
                                 815<span class="line-through font-light"> ₹ 2037</span>
                             </button>
                         </div>
                         <div class="px-1  w-full h-full ">
-                            <img class="h-full w-full rounded-md" src="Assests/becausedViewed3.avif" alt="">
+                            <img class="h-full w-full rounded-md" src="Assests/becausedViewed3.avif" alt="becaused you viewed-image">
                             <button
                                 class="px-1.5 py-1 rounded-2xl text-sm font-semibold bg-white relative bottom-8 left-2">₹
                                 485
                             </button>
                         </div>
                         <div class="px-1 w-full h-full sm:hidden md:block">
-                            <img class="h-full w-full rounded-md" src="Assests/becausedViewed4.avif" alt="">
+                            <img class="h-full w-full rounded-md" src="Assests/becausedViewed4.avif" alt="becaused you viewed-image">
                             <button
                                 class="px-1.5 py-1 rounded-2xl text-sm font-semibold bg-white relative bottom-8 left-2">₹1165
                                 <span class="line-through font-light">₹ 4461</span>
                             </button>
                         </div>
                         <div class="px-1  w-full h-full hidden sm:hidden md:block">
-                            <img class="h-full w-full rounded-md" src="Assests/becausedViewed5.avif" alt="">
+                            <img class="h-full w-full rounded-md" src="Assests/becausedViewed5.avif" alt="becaused you viewed-image">
                             <button
                                 class="px-1.5 py-1 rounded-2xl text-sm font-semibold bg-white relative bottom-8 left-2">₹118
                                 <span class="line-through font-light">₹ 148</span>
                             </button>
                         </div>
                         <div class="px-1  w-full h-full hidden lg:block">
-                            <img class="h-full w-full rounded-md" src="Assests/becausedViewed6.avif" alt="">
+                            <img class="h-full w-full rounded-md" src="Assests/becausedViewed6.avif" alt="becaused you viewed-image">
                             <button
                                 class="px-1.5 py-1 rounded-2xl text-sm font-semibold bg-white relative bottom-8 left-2">₹841
                                 <span class="line-through font-light">₹ 1121</span>
                             </button>
                         </div>
                         <div class="px-1  w-full h-full hidden lg:block">
-                            <img class="h-full w-full rounded-md" src="Assests/becausedViewed7.avif" alt="">
+                            <img class="h-full w-full rounded-md" src="Assests/becausedViewed7.avif" alt="becaused you viewed-image">
                             <button
                                 class="px-1.5 py-1 rounded-2xl text-sm font-semibold bg-white relative bottom-8 left-2">₹671
                                 <span class="line-through font-light">₹ 1920</span>
@@ -592,44 +602,47 @@
                         <h1 class=" text-[18px] md:text-2xl font-semibold">Shop our popular gift categories</h1>
                     </div>
                     <div class="md:pt-6 pt-3 w-full">
-                        <ul
-                            class="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-5 lg:grid-rows-1 gap-4">
-                            <li
-                                class="rounded-xl border cursor-pointer hover:shadow-md hover:shadow-slate-400 transition hover:duration-300">
-                                <div class=""><img src="Assests/giftCatagories1.avif" alt=""
+                        <ul class="grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2 lg:grid-cols-5 lg:grid-rows-1 gap-4">
+                            <li class="rounded-xl border cursor-pointer hover:shadow-md hover:shadow-slate-400 transition hover:duration-300">
+                                <div class=""><img src="Assests/giftCatagories1.avif" alt="gift categories-image"
                                         class="w-full rounded-t-xl object-cover"></div>
-                                <div class="px-3 py-4 md:p-5 text-center text-sm md:text-xl sm:text-lg font-semibold"><a
-                                        href="#">Anniversary gifts</a></div>
+                                <div class="px-3 py-4 md:p-5 text-center text-sm md:text-xl sm:text-lg font-semibold">
+                                    <a href="#">Anniversary gifts</a>
+                                </div>
                             </li>
-                            <li
-                                class="rounded-xl cursor-pointer hover:shadow-md hover:shadow-slate-400 transition hover:duration-300">
-                                <div><img src="Assests/giftCatagories2.avif" alt="" class="w-full rounded-t-xl"></div>
-                                <div class="px-3 py-4 md:p-5 text-center text-sm md:text-xl sm:text-lg font-semibold"><a
-                                        href="#">Gifts for him</a></div>
+                            <li class="rounded-xl cursor-pointer hover:shadow-md hover:shadow-slate-400 transition hover:duration-300">
+                                <div><img src="Assests/giftCatagories2.avif" alt="gift categories-image" class="w-full rounded-t-xl"></div>
+                                <div class="px-3 py-4 md:p-5 text-center text-sm md:text-xl sm:text-lg font-semibold">
+                                    <a href="#">Gifts for him</a>
+                                </div>
                             </li>
-                            <li
-                                class="rounded-xl border cursor-pointer hover:shadow-md hover:shadow-slate-400 transition hover:duration-300">
-                                <div><img src="Assests/giftCatagories3.avif" alt="" class="w-full rounded-t-xl"></div>
-                                <div class="px-3 py-4 md:p-5 text-center text-sm md:text-xl sm:text-lg font-semibold"><a
-                                        href="#">Gifts for her</a></div>
+                            <li class="rounded-xl border cursor-pointer hover:shadow-md hover:shadow-slate-400 transition hover:duration-300">
+                                <div><img src="Assests/giftCatagories3.avif" alt="gift categories-image" class="w-full rounded-t-xl"></div>
+                                <div class="px-3 py-4 md:p-5 text-center text-sm md:text-xl sm:text-lg font-semibold">
+                                    <a href="#">Gifts for her</a>
+                                </div>
                             </li>
-                            <li
-                                class="rounded-xl border cursor-pointer hover:shadow-md hover:shadow-slate-400 transition hover:duration-300">
-                                <div><img src="Assests/giftCatagories4.avif" alt="" class="w-full rounded-t-xl"></div>
-                                <div class="px-3 py-4 md:p-5 text-center text-sm md:text-xl sm:text-lg font-semibold"><a
-                                        href="#">Personalised gift idea</a></div>
+                            <li class="rounded-xl border cursor-pointer hover:shadow-md hover:shadow-slate-400 transition hover:duration-300">
+                                <div><img src="Assests/giftCatagories4.avif" alt="gift categories-image" class="w-full rounded-t-xl"></div>
+                                <div class="px-3 py-4 md:p-5 text-center text-sm md:text-xl sm:text-lg font-semibold">
+                                    <a href="#">Personalised gift idea</a>
+                                </div>
                             </li>
-                            <li
-                                class="rounded-xl border cursor-pointer hover:shadow-md hover:shadow-slate-400 transition hover:duration-300">
-                                <div><img src="Assests/giftCatagories5.avif" alt="" class="w-full rounded-t-xl"></div>
-                                <div class="px-3 py-4 md:p-5 text-center text-sm md:text-xl sm:text-lg font-semibold"><a
-                                        href="#">Wedding gifts</a></div>
+                            <li class="rounded-xl border cursor-pointer hover:shadow-md hover:shadow-slate-400 transition hover:duration-300">
+                                <div>
+                                    <img src="Assests/giftCatagories5.avif" alt="gift categories-image" class="w-full rounded-t-xl">
+                                </div>
+                                <div class="px-3 py-4 md:p-5 text-center text-sm md:text-xl sm:text-lg font-semibold">
+                                    <a href="#">Wedding gifts</a>
+                                </div>
                             </li>
-                            <li
-                                class="rounded-xl lg:hidden cursor-pointer hover:shadow-md hover:shadow-slate-400 transition hover:duration-300">
-                                <div><img src="Assests/giftCatagories6.webp" alt="" class="w-full rounded-t-xl"></div>
-                                <div class="px-3 py-4 md:p-5 text-center text-sm md:text-xl sm:text-lg font-semibold"><a
-                                        href="#">Housewarming gifts</a></div>
+                            <li class="rounded-xl lg:hidden cursor-pointer hover:shadow-md hover:shadow-slate-400 transition             hover:duration-300">
+                                <div>
+                                    <img src="Assests/giftCatagories6.webp" alt="gift categories-image" class="w-full rounded-t-xl">
+                                </div>
+                                <div class="px-3 py-4 md:p-5 text-center text-sm md:text-xl sm:text-lg font-semibold">
+                                    <a href="#">Housewarming gifts</a>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -659,11 +672,11 @@
                                         class="h-full flex items-center gap-3 sm:h-full md:h-full xl:h-full md:flex-col">
                                         <div class="h-full w-full">
                                             <img class="rounded-l-xl md:rounded-t-xl lg:rounded-xl h-full w-full object-cover object-center"
-                                                src="Assests/discover shop.webp" alt="">
+                                                src="Assests/discover shop.webp" alt="discover shop-image">
                                         </div>
                                         <div
                                             class="xl:hidden lg:block flex items-center gap-4 py-4 lg:py-0 w-full  h-auto">
-                                            <img src="Assests/hazelCraftStore.webp" alt=""
+                                            <img src="Assests/hazelCraftStore.webp" alt="HazelCraftStore-image"
                                                 class="h-full rounded-full border-black border-2 w-8 sm:w-10 lg:w-10">
                                             <p class="font-semibold truncate">HazelCraftStore</p>
                                         </div>
@@ -677,11 +690,11 @@
                                         class="h-full flex items-center gap-3 sm:h-full md:h-full xl:h-full md:flex-col">
                                         <div class="h-full w-full">
                                             <img class="rounded-l-xl md:rounded-t-xl lg:rounded-xl h-full w-full object-cover object-center"
-                                                src="Assests/discover shop1.webp" alt="">
+                                                src="Assests/discover shop1.webp" alt="discover shop-image">
                                         </div>
                                         <div
                                             class="xl:hidden lg:block flex items-center gap-4 py-4 lg:py-0 w-full h-auto">
-                                            <img src="Assests/SuumayaFashionHub.webp" alt=""
+                                            <img src="Assests/SuumayaFashionHub.webp" alt="SuumayaFashionHub-image"
                                                 class="h-full rounded-full border-black border-2 w-[2.3rem] sm:w-10 lg:w-10">
                                             <p class="font-semibold truncate">SuumayaFashionHub</p>
                                         </div>
@@ -695,11 +708,11 @@
                                         class="h-full flex items-center gap-3 sm:h-full md:h-full  xl:h-full md:flex-col">
                                         <div class="h-full w-full lg:h-full">
                                             <img class="rounded-l-xl md:rounded-t-xl lg:rounded-xl h-full w-full object-cover object-center"
-                                                src="Assests/discover shop2.webp" alt="">
+                                                src="Assests/discover shop2.webp" alt="discover shop-image">
                                         </div>
                                         <div
                                             class="xl:hidden lg:block flex items-center gap-4 py-4 lg:py-0 w-full h-auto">
-                                            <img src="Assests/TonalityOne.webp" alt=""
+                                            <img src="Assests/TonalityOne.webp" alt="HazelCraftStore-image"
                                                 class="h-full rounded-full border-black border-2 w-[2.3rem] sm:w-10 lg:w-10">
                                             <p class="font-semibold truncate">HazelCraftStore</p>
                                         </div>
@@ -800,16 +813,17 @@
                             wonderfully weird story.</a>
                     </div>
                     <div class="mt-7 px-3">
-                        <div class="m-auto md:w-4/5 lg:w-2/3">
-                            <p class="text-[16px] md:text-[18px] font-medium w-full">Etsy is a global marketplace for creative and
+                        <div class="m-auto md:w-4/5 lg:w-2/3 flex">
+                            <p class="text-[16px] md:text-[18px] font-normal w-full">Etsy is a global marketplace for creative and
                                 one-of-a-kind goods. It’s home to a universe of special, extraordinary items, from
                                 unique home decor pieces to trending fashion finds. Founded in 2005, Etsy began its
-                                Indian journey in 2018. <br><br>
+                                Indian journey in 2018.<br><br>
                                 Etsy is a place where creativity lives
                                 and thrives because it’s powered by people just like you. We help our community of 5.9
                                 million active sellers worldwide turn their ideas into successful small businesses. Our
                                 platform connects them with 89.9 million active buyers looking for something special
                                 that enables them to express their unique identity.</p>
+                                <!-- <div><img src="Assests/down.png" alt="down arrow-image" class="w-5 py-1 transition duration-500 ease-in-out" id="down-arrow4"></div> -->
                         </div>
                         <div class="mt-7">
                             <div class="m-auto md:w-4/5 lg:w-2/3">
@@ -817,7 +831,7 @@
                                     <h2 class="text-xl text-blue-600 font-semibold ">Why choose Etsy?</h2>
                                     <div class="mt-7">
                                         <p class="md:text-[18px]">
-                                            <strong>A community doing good</strong><br>
+                                            <strong d>A community doing good</strong><br>
                                             Etsy is where people come together to make, sell, buy, and collect unique
                                             items.
                                             We’re also a community pushing for positive change for small businesses,
@@ -931,7 +945,7 @@
                                     <div class="md:w-7/12 md:m-auto">
                                         <h2 class="text-xl text-center font-semibold">Have a question? Well, we’ve got some answers.</h2>
                                         <div class="w-64 m-auto mt-5 px-6 sm:w-60 sm:m-auto sm:pt-4">
-                                            <button class="text-xl font-semibold border-2 border-black py-2 px-3 rounded-full hover:shadow-lg hover:scale-105">Go to Help Center</button>
+                                            <button class="text-xl font-semibold border-2 border-black py-2 px-3 rounded-full hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out">Go to Help Center</button>
                                         </div>
                                     </div>
                                 </div>
@@ -948,6 +962,7 @@
     <!-- Footer-section Starts -->
     <footer>
         <div>
+            <!-- Subscribe button start -->
             <div class="bg-[#ccebff] w-full py-4 px-5">
                 <div class="text-[17px] font-semibold text-center">
                     <h2>Yes! Send me exclusive offers, unique gift ideas, and personalised tips for shopping and selling on Etsy.</h2>
@@ -955,12 +970,15 @@
                 <div class="px-2 py-4 w-full">
                     <div class="w-full bg-white rounded-full md:w-[480px] m-auto">
                         <form action="#" class="w-full flex">
-                            <input type="email" name="" id="" class="w-full rounded-full py-3 px-4" placeholder="Enter Your Email">
-                            <button class="py-3 px-4 font-semibold">Subscribe</button>
+                            <input type="email" name="email" id="email" class="w-full rounded-l-full py-3 px-4" placeholder="Enter Your Email" required>
+                            <button class="py-3 px-4 font-semibold rounded-r-full hover:bg-black hover:text-white hover:scale-110 transition duration-150 ease-in-out">Subscribe</button>
                         </form>
                     </div>
                 </div>
             </div>
+            <!-- Subscribe button ends -->
+
+            <!-- small info about Etsy -->
             <div class="bg-blue-500 px-3 p-4 flex flex-col items-center md:flex-row md:justify-center">
                 <div class="w-8">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" aria-hidden="true" focusable="false" class="invert">
@@ -973,15 +991,17 @@
                     <h2 class="text-white px-3 text-center underline decoration-dashed">Etsy is powered by 100% renewable electricity.</h2>
                 </div>
             </div>
+             <!-- small info about Etsy -->
+
+            <!-- Footer menu starts-->
             <div class="bg-[#3140af] flex flex-col md:flex-row-reverse justify-end xl:px-16">
-                <!-- Footer menu -->
                 <div class="md:w-auto">
                     <div class="sm:px-3 py-5">
                         <ul class="flex flex-col gap-2 sm:flex-row sm:justify-center md:space-x-12 py-3">
                             <li>
-                                <button class="flex justify-between w-full p-2.5 rounded-full sm:rounded-none sm:bg-[#3140af] bg-[#4C59B9]" id="openShop">
+                                <button class="flex justify-between w-full p-2.5 rounded-full sm:rounded-none sm:bg-[#3140af]" id="openShop">
                                    <div><h2 class="font-semibold text-white">Shop</h2></div>
-                                   <div><img src="Assests/down.png" alt="" class="w-5 invert py-1 sm:hidden"></div>
+                                   <div><img src="Assests/down.png" alt="down arrow-image" class="w-5 invert py-1 sm:hidden transition duration-500 ease-in-out" id="down-arrow1"></div>
                                 </button>
                                 <div class="text-white hidden sm:block sm:text-[13.50px]" id="shop-option">
                                     <ul class="px-3 flex flex-col gap-2">
@@ -996,9 +1016,9 @@
                                 </div>
                             </li>
                             <li>
-                                <button class="flex justify-between w-full p-2.5 rounded-full sm:rounded-none sm:bg-[#3140af] bg-[#4C59B9]" id="sell">
+                                <button class="flex justify-between w-full p-2.5 rounded-full sm:rounded-none sm:bg-[#3140af]" id="sell">
                                    <div><h2 class="font-semibold text-white">Sell</h2></div>
-                                   <div><img src="Assests/down.png" alt="" class="w-5 invert py-1 sm:hidden"></div>
+                                   <div><img src="Assests/down.png" alt="down arrow-image" class="w-5 invert py-1 sm:hidden transition duration-500 ease-in-out" id="down-arrow2"></div>
                                 </button>
                                 <div class="text-white hidden sm:block sm:text-[13.50px]" id="sell-option">
                                     <ul class="px-3 flex flex-col gap-2">
@@ -1010,9 +1030,9 @@
                                 </div>
                             </li>
                             <li>
-                                <button class="flex justify-between w-full p-2.5 rounded-full sm:rounded-none sm:bg-[#3140af] bg-[#4C59B9]" id="about">
+                                <button class="flex justify-between w-full p-2.5 rounded-full sm:rounded-none sm:bg-[#3140af]" id="about">
                                    <div><h2 class="font-semibold text-white">About</h2></div>
-                                   <div><img src="Assests/down.png" alt="" class="w-5 invert py-1 sm:hidden"></div>
+                                   <div><img src="Assests/down.png" alt="down arrow-image" class="w-5 invert py-1 sm:hidden transition duration-500 ease-in-out" id="down-arrow3"></div>
                                 </button>
                                 <div class="text-white hidden sm:block sm:text-[13.50px]" id="about-option">
                                     <ul class="px-3 flex flex-col gap-2">
@@ -1027,9 +1047,9 @@
                                 </div>
                             </li>
                             <li>
-                                <button class="flex justify-between w-full p-2.5 rounded-full sm:rounded-none sm:bg-[#3140af] bg-[#4C59B9]"  id="help">
+                                <button class="flex justify-between w-full p-2.5 rounded-full sm:rounded-none sm:bg-[#3140af]"id="help">
                                    <div><h2 class="font-semibold text-white">Help</h2></div>
-                                   <div><img src="Assests/down.png" alt="" class="w-5 invert py-1 sm:hidden"></div>
+                                   <div><img src="Assests/down.png" alt="down arrow-image" class="w-5 invert py-1 sm:hidden transition duration-500 ease-in-out" id="down-arrow4"></div>
                                 </button>
                                 <div class="text-white sm:block sm:text-[13.50px]">
                                     <div class="hidden sm:block" id="help-privacy">
@@ -1041,11 +1061,33 @@
                                     <div class="sm:px-3 sm:py-2 mt-5 sm:mt-4">
                                         <div>
                                             <ul class="flex gap-5 justify-center md:flex-wrap md:justify-start">
-                                                <li><div><a href="#"><img src="Assests/instagram.png" alt="" class="w-6 sm:w-4 invert"></a></div></li>
-                                                <li><div><a href="#"><img src="Assests/facebook.png" alt="" class="w-6 sm:w-4 invert"></a></div></li>
-                                                <li><div><a href="#"><img src="Assests/icons8-pinterest-50.png" alt="" class="w-6 sm:w-4 invert"></a></div></li>
-                                                <li><div><a href="#"><img src="Assests/twitter.png" alt="" class="w-6 sm:w-4 invert"></a></div></li>
-                                                <li><div><a href="#"><img src="Assests/youtube.png" alt="" class="w-6 sm:w-4 invert"></a></div></li>
+                                                <li>
+                                                    <div>
+                                                        <a href="#"><img src="Assests/instagram.png" alt="instagram-icon" class="w-6 sm:w-4 invert">
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="#"><img src="Assests/facebook.png" alt="facebook-icon" class="w-6 sm:w-4 invert">
+                                                        </a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="#"><img src="Assests/icons8-pinterest-50.png" alt="pinterest-icon" class="w-6 sm:w-4 invert"></a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="#"><img src="Assests/twitter.png" alt="twitter-icon" class="w-6 sm:w-4 invert"></a>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <a href="#"><img src="Assests/youtube.png" alt="youtube-icon" class="w-6 sm:w-4 invert"></a>
+                                                    </div>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -1054,6 +1096,7 @@
                         </ul>
                     </div>
                 </div>
+
                 <!-- logo and download app button -->
                 <div class="md:w-[480px] bg-blue-900">
                     <div class="w-full h-full p-5 md:p-2 flex justify-center  items-center gap-3 md:flex-col">
@@ -1068,7 +1111,10 @@
                         </div>
                     </div>
                 </div>
+                 <!-- logo and download app button -->
             </div>
+            <!-- Footer menu ends-->
+
             <div class="bg-black p-3 md:p-5">
                 <div class="flex flex-col justify-center gap-2 lg:flex-row lg:justify-between md:px-16"> 
                     <div class="flex justify-center items-center pb-4 md:pb-0">
