@@ -139,11 +139,11 @@
     }
     .about-project{
         text-align: center;
-        font-size: 2vw;
+        font-size: 2.5vw;
     }
 }
 
-@media screen and (min-width:321px) and (max-width:640px) {
+@media screen and (min-width:426px) and (max-width:640px) {
     .nav-menu {
         display: none;
     }
@@ -177,8 +177,8 @@
     }
 
     .small-info .myname h1 {
-        font-size: 1.8rem;
-        letter-spacing: 2px;
+        font-size: 2rem;
+        letter-spacing: 3px;
     }
 
     .info {
@@ -188,7 +188,7 @@
     }
 
     .small-info .info .text {
-        font-size: 0.98rem;
+        font-size: 1.2rem;
         padding-inline: 5vw;
     }
 
@@ -225,11 +225,11 @@
         width: 100%;
         height: auto;
         margin: 0;
-        padding-inline: 50px;
+        padding-inline: 40px;
     }
 
     .main-about h3 {
-        font-size: 1.2rem;
+        font-size: 1.49rem;
     }
 
     #p1 {
@@ -239,8 +239,8 @@
     .main-about .para {
         width: 100%;
         margin-top: 10px;
-        font-size: 0.9rem;
-        font-weight: 400;
+        font-size: 0.95rem;
+        font-weight: 500;
     }
 
     .skills {
@@ -283,7 +283,199 @@
     }
     .about-project{
         text-align: center;
-        font-size: 3vw;
+        font-size: 3.2vw;
+    }
+    #contact{
+        padding: 5rem 0;
+    }
+    .contact-info div label {
+        font-size: 0.9rem;
+    }
+
+    .contact-info div input {
+        font-size: 0.8rem;
+    }
+
+    .contact-info div input[type="submit"] {
+        width: 100%;
+    }
+    .footer-container{
+        padding: 0;
+    }
+    .upper-footer{
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .upper-footer-name{
+        padding: 10px 0;
+        width: 100%;
+        order: 2;
+    }
+    .upper-footer-name h2,.upper-footer-social h2{
+        font-size: 1.15rem;
+        text-align: left;
+    }
+    .upper-footer-name p{
+        font-size: 0.8rem;
+        margin-top: 1.1rem;
+    }
+    .upper-footer-social{
+        padding-top: 20px;
+    }
+    .footer-social a img{
+        width: 28px;
+        margin: 0 10px 0 0 ;
+    }
+}
+
+
+@media  screen and (max-width:426px) and (min-width:321px) {
+    .nav-menu {
+        display: none;
+    }
+    .nav {
+        height: 75px;
+        justify-content: space-between;
+        padding-inline: 10px;
+    }
+
+    .logo-name {
+        justify-content: flex-start;
+        padding-inline: 0;
+        width: 12em;
+    }
+
+    .logo-name span {
+        font-size: 0.9rem;
+    }
+
+    .nav .hamberger-icon {
+        display: block;
+        width: auto;
+    }
+
+    #social-link-section {
+        display: none;
+    }
+
+    #info-section {
+        width: 100%;
+    }
+
+    .small-info .myname h1 {
+        font-size: 2.22rem;
+        letter-spacing: 4px;
+        padding-inline: 2px;
+    }
+
+    .info {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .small-info .info .text {
+        font-size: 1.2rem;
+        padding-inline: 5vw;
+    }
+
+    .heading {
+        width: 100%;
+        margin: 0;
+        padding-inline: 10px;
+    }
+
+    .heading h2 {
+        font-size: 1.7rem;
+    }
+
+    .spn {
+        width: 30px;
+    }
+
+    .short-info {
+        width: 100%;
+        font-size: 0.8rem;
+        font-weight: 700;
+        padding-inline: 24px;
+        height: auto;
+    }
+
+    .box2 {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+
+    }
+
+    .main-about {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding-inline: 30px;
+    }
+
+    .main-about h3 {
+        font-size: 1.4rem;
+    }
+
+    #p1 {
+        margin-top: 15px;
+    }
+
+    .main-about .para {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .skills {
+        width: 100%;
+        justify-content: center;
+        align-content: baseline;
+        gap: 10px;
+        font-size: 0.8rem;
+        margin-top: 15px;
+    }
+
+    .my-skills {
+        margin-top: 30px;
+    }
+
+    .skills div {
+        height: 43px;
+    }
+
+    .inner-box {
+        width: 90%;
+    }
+    .project-container{
+        padding-top: 4.8rem;
+    }
+    .projects{
+        padding: 5px;
+    }
+    .project-outer{
+        flex-direction: column;
+    }
+    .project-name-details{
+        text-align: center;
+    }
+    .project-name{
+        text-align: center;
+    }
+    .project-image{
+        padding: 7px;
+    }
+    .image{
+        width: 100%;
+    }
+    .project-detail{
+        padding: 7px;
+    }
+    .about-project{
+        text-align: center;
+        font-size: 4vw;
     }
     #contact{
         padding: 5rem 0;
@@ -379,20 +571,22 @@
     #info-section {
         width: 100%;
     }
-
+    .small-info{
+       padding-inline: 10px;
+    }
     .small-info .myname h1 {
-        font-size: 1.5rem;
-        letter-spacing: 1px;
+        font-size: 2.5rem;
+        letter-spacing: 5px;
     }
 
     .info {
         width: 100%;
-        padding-inline: 10px;
+        padding-inline: 5px;
         margin-top: 20px;
     }
 
     .small-info .info .text {
-        font-size: 0.98rem;
+        font-size: 1.2rem;
         width: 100%;
         padding-inline: 0vw;
     }
@@ -408,7 +602,7 @@
     }
 
     .heading h2 {
-        font-size: 1.4rem;
+        font-size: 1.82rem;
     }
 
     .spn {
@@ -417,7 +611,7 @@
 
     .short-info {
         width: 100%;
-        font-size: 0.75rem;
+        font-size: 0.85rem;
         font-weight: 600;
         padding-inline: 10px;
         margin-top: 10px;
@@ -438,18 +632,19 @@
     }
 
     .main-about h3 {
-        font-size: 1.2rem;
+        font-size: 1.39rem;
     }
 
     #p1 {
         margin-top: 10px;
+        font-size: 0.85rem;
     }
 
     .main-about .para {
         width: 100%;
         margin-top: 10px;
-        font-size: 0.8rem;
-        font-weight: 400;
+        font-size: 0.85rem;
+        font-weight: 500;
     }
 
     .my-skills {
@@ -476,6 +671,9 @@
         width: 100%;
         padding: 10px;
     }
+    .project-container{
+        padding-top: 4.8rem;
+    }
     .project-outer{
         flex-direction: column;
     }
@@ -497,10 +695,13 @@
     }
     .about-project{
         text-align: center;
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
     #contact{
         padding: 4.8rem 0;
+    }
+    .contact-form{
+        padding-top: 20px;
     }
     .contact-info div label {
         font-size: 0.9rem;

@@ -245,6 +245,7 @@ p{
     flex-direction: column;
     height: 100%;
     width: 100%;
+    padding-inline: 13px;
 }
 
 .myname {
@@ -353,7 +354,7 @@ p{
 
 .main-about p {
     margin-top: 16px;
-    text-align: center;
+    text-align: justify;
     color: #555;
     line-height: 28px;
     font-size: 18px;
