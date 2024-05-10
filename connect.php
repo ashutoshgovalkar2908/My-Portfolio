@@ -1,32 +1,41 @@
 <?php
-// Database connection
-$servername = "localhost";
-$username = "root";
-$password = " ";
-$database = "portfolioform";
 
-$conn = new mysqli($servername, $username, $password, $database);
+$fullname = filter_input(INPUT_POST,'fullname');
+$email = filter_input(INPUT_POST,'email');
+$message = filter_input(INPUT_POST,'message');
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+if(!empty($fullname)){
+    if(!empty($email)){
+        if(!empty($message)){
+            $host = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "portfolio_form";
 
-// Form submission handling
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $fullname = $_POST["fullname"];
-    $email = $_POST["email"];
-    $message = $_POST["message"];
+            // creat connection 
+            $conn = new mysqli ($host , $username ,$password ,$dbname);
 
-    // Insert data into database
-    $sql = "INSERT INTO contact_form (fullname, email, message) VALUES ('$fullname', '$email', '$message')";
-    
-    if ($conn->query($sql) === TRUE) {
-        echo "New record created successfully";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
+            if(mysqli_connect_error()){
+                die('connect Error('.mysqli_connect_error().')'.mysqli_connect_error());
+            }else{
+                $sql = "INSERT INTO user_info (fullname , email, message) values('$fullname','$email','$message')";
+                if($conn->query($sql)){
+                    echo "New Record is insert sucessfully";
+                }else{
+                    echo "Error:".$sql."<br>".$conn->error;
+                }
+                $conn->close();
+            }
+        }else{
+            echo "message should not be empty";
+            die();
+        }
+    }else{
+        echo "email should not be empty";
+        die();
     }
+}else{
+    echo "email should not be empty";
+    die();
 }
-
-$conn->close();
 ?>
