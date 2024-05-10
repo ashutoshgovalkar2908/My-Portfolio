@@ -557,6 +557,10 @@ p{
     font-size: 0.98rem;
     font-weight: 600;
     cursor: pointer;
+    transition: .26s ease-in-out;
+}
+.contact-info div input[type="submit"]:hover{
+    background-color: rgb(141, 64, 242);
 }
 
 /* Footer Section */
