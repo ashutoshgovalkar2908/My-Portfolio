@@ -18,6 +18,12 @@ function closeMenu(){
      
 }
 
+document.querySelector(".login").addEventListener("click",submitMsg);
+
+function submitMsg(){
+    console.log("Form Submitted Successfully!"); 
+}
+
 // document.getElementById('open-icon').addEventListener('click', function() {
 //     document.querySelector('.home').classList.toggle('blur');
 //   });
