@@ -580,10 +580,6 @@ video {
   right: -0.25rem;
 }
 
-.-right-64 {
-  right: -16rem;
-}
-
 .bottom-8 {
   bottom: 2rem;
 }
@@ -594,6 +590,10 @@ video {
 
 .left-2 {
   left: 0.5rem;
+}
+
+.right-0 {
+  right: 0px;
 }
 
 .right-1 {
@@ -626,10 +626,6 @@ video {
 
 .top-5 {
   top: 1.25rem;
-}
-
-.right-0 {
-  right: 0px;
 }
 
 .z-10 {
@@ -850,6 +846,14 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[100vw\] {
+  height: 100vw;
+}
+
+.h-\[100vh\] {
+  height: 100vh;
 }
 
 .w-1\/2 {
@@ -1132,6 +1136,10 @@ video {
 
 .text-nowrap {
   text-wrap: nowrap;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-2xl {

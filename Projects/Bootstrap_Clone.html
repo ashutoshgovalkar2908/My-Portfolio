@@ -11,7 +11,7 @@
 <body class="bg-[rgba(33,37,41)] box-border">
 
     <!-- header start here -->
-    <header class="w-full sticky top-0 z-10">
+    <header class="w-full sticky top-0 z-10" id="head">
 
         <!-- nav starts here -->
         <nav class="w-full  bg-gradient-to-r from-[#712cf9] to-[#712cf9f2]">
@@ -155,7 +155,7 @@
             </div>
 
             <!-- navbaar for small devices start here -->
-            <div class="bg-[#712cf9] fixed top-0 right-0 max-w-[400px] h-fit  hidden" id="navSmall">
+            <div class="bg-[#712cf9] fixed top-0 right-0 max-w-[400px] h-[100vh]  hidden" id="navSmall">
                 <div class="pt-4 px-6 flex items-center justify-between">
                     <h4 class="text-white text-xl font-semibold">Bootstrap</h4>
                     <button id="clsBtn">
@@ -232,7 +232,7 @@
     <!-- header Ends here -->
 
     <!-- main start here -->
-    <main>
+    <main id="main">
 
         <!-- short info about bootstrap section start-->
         <div class="w-full bg-custom-gradient py-12">
@@ -846,27 +846,26 @@
                         <div class="border-[1px] border-[#495057] rounded-md mb-4">
                             <div class="py-4 px-6">
                                 <ul class="flex flex-wrap mb-4">
-                                    <li class="text-white rounded-md" style="background-color:#0d6efd !important;">
+                                    <li class="text-white rounded-md" style="background-color:#0d6efd !important;" id="cstmBtn1">
                                         <button class="py-2 px-4">Home</button>
                                     </li>
-                                    <li style="color: #6ea8fe">
+                                    <li style="color: #6ea8fe" id="cstmBtn2">
                                         <button class="py-2 px-4">Profile</button>
                                     </li>
-                                    <li style="color: #6ea8fe">
+                                    <li style="color: #6ea8fe" id="cstmBtn3">
                                         <button class="py-2 px-4">Contact</button>
                                     </li>
                                 </ul>
                                 <ul class="flex flex-wrap gap-2 justify-start p-1"
                                     style="background-color: #0d6efd; border-radius: 2rem;">
-                                    <li class="rounded-full bg-white text-[14px]" style="flex: 1 1 auto">
-                                        <button class="w-full h-full px-4"
-                                            style="padding-block: 8px; color: #0d6efd;">Home</button>
+                                    <li class="text-white rounded-full py-2 px-4 bg-white" style="color: #6ea8fe; flex: 1 1 auto" id="cstmBtn4">
+                                        <button class="w-full text-[14px]">Home</button>
                                     </li>
-                                    <li class="text-white" style="color: #6ea8fe; flex: 1 1 auto">
-                                        <button class="py-2 px-4 bg-[#0d6efd] w-full">Profile</button>
+                                    <li class="text-white rounded-full py-2 px-4" style="color: #6ea8fe; flex: 1 1 auto" id="cstmBtn5">
+                                        <button class="w-full text-[14px]">Profile</button>
                                     </li>
-                                    <li class="p-2 text-center" style="color: #6ea8fe; flex: 1 1 auto">
-                                        <button class="w-full">Contact</button>
+                                    <li class="text-white rounded-full py-2 px-4" style="color: #6ea8fe; flex: 1 1 auto" id="cstmBtn6">
+                                        <button class="w-full text-[14px]">Contact</button>
                                     </li>
                                 </ul>
                             </div>
