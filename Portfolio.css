@@ -111,6 +111,7 @@ p{
     position: fixed;
     top: 75px;
     right: -50%;
+    display: none;
     width: 100%;
     z-index: 999;
 }
@@ -135,10 +136,12 @@ p{
 .slider{
     right: 0px;
     animation: slider .6s ease-in reverse;
+    display: block;
 }
 .slider2{
-    right: -50%;
+    right: -100%;
     transition: .6s ease-in;
+    display: block;
 }
 .nav-menu2 ul li {
     padding: 10px 20px;
