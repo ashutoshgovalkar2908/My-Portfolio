@@ -1,29 +1,42 @@
-function openMenu(){
-    let openIcon = document.getElementById('open-icon');
-    let navMenu =document.querySelector(".nav-menu2");
-    let close =document.getElementById('close-icon');
+// functions for open and close nav-baar in small divices
 
-    navMenu.style.display ="block";
-    openIcon.style.display ="none";
-    close.style.display ="block";
-     
-}
-function closeMenu(){
-    let openIcon = document.getElementById('open-icon');
-    let navMenu =document.querySelector(".nav-menu2");
-    let close =document.getElementById('close-icon');
-    navMenu.style.display ="none";
-    openIcon.style.display ="block";
-    close.style.display ="none";
-     
-}
+ document.querySelector("#open-icon").addEventListener('click', ()=>{
+        let openIcon = document.getElementById('open-icon');
+        let navMenu =document.querySelector('.nav-menu2');
+        let close =document.getElementById('close-icon');
 
-document.querySelector(".login").addEventListener("click",submitMsg);
+        navMenu.classList.add('slider');
+        navMenu.classList.remove('slider2');
+        openIcon.style.display ="none";
+        close.style.display ="block";
+ });
 
-function submitMsg(){
-    console.log("Form Submitted Successfully!"); 
-}
+ document.querySelector('#close-icon').addEventListener('click', ()=>{
+        let openIcon = document.getElementById('open-icon');
+        let navMenu =document.querySelector(".nav-menu2");
+        let close =document.getElementById('close-icon');
 
-// document.getElementById('open-icon').addEventListener('click', function() {
-//     document.querySelector('.home').classList.toggle('blur');
-//   });
+        navMenu.classList.add('slider2');
+        navMenu.classList.remove('slider');
+        openIcon.style.display ="block";
+        close.style.display ="none";
+ });
+
+//  functions for close nav-baar after clicking on links
+
+ let links = document.querySelectorAll(".links");
+ links.forEach(link => {
+     link.addEventListener('click', ()=>{
+        let navMenu = document.querySelector(".nav-menu2");
+        setTimeout(() => {
+            navMenu.classList.add('slider2');
+            navMenu.classList.remove('slider');
+        }, 200); // Wait for the transition to complete
+    
+        let openIcon = document.getElementById('open-icon');
+        let close = document.getElementById('close-icon');
+        openIcon.style.display = "block";
+        close.style.display = "none";
+     });
+ });
+ 
