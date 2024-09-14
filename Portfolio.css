@@ -477,13 +477,16 @@ p{
     transform: translateY(-5px);
     background-color:rgb(141, 64, 242) ;
 }
-.project-button button a{
+.project-button button a,
+.mini-btn{
     color: #ffffff;
 }
 .mini-projects{
     margin-inline: auto;
 }
-
+.mini{
+    display: none;
+}
 /* Contact Section Page */
 #contact {
     padding: var(--section-padding);
