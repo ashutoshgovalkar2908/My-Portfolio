@@ -39,4 +39,13 @@
         close.style.display = "none";
      });
  });
- 
+
+ let mini = document.querySelector(".mini");
+ document.querySelector(".mini-btn").addEventListener("click",()=>{
+     if(mini.style.display === "none" || mini.style.display === ''){
+        mini.style.display = "block";
+     }
+     else{
+        mini.style.display = "none"
+     }
+ })
