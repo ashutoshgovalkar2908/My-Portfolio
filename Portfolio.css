@@ -480,6 +480,9 @@ p{
 .project-button button a{
     color: #ffffff;
 }
+.mini-projects{
+    margin-inline: auto;
+}
 
 /* Contact Section Page */
 #contact {
