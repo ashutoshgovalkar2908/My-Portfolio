@@ -481,11 +481,42 @@ p{
 .mini-btn{
     color: #ffffff;
 }
+.miniProject-section,
+.mini-projects{
+    width: 100%;
+}
 .mini-projects{
     margin-inline: auto;
+    justify-content: center;
 }
 .mini{
     display: none;
+    margin-block: 15px;
+}
+.miniProjects-boxes{
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.miniProjects-boxes div{
+    width: 25%;
+    border: 1px solid black;
+}
+.miniProjects-boxes div a{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+
+}
+.miniProjects-boxes div a img{
+    width: 100%;
+    height: 100%;
+}
+.miniProjects-boxes div,
+.miniProjects-boxes div a,
+.miniProjects-boxes div a img{
+    border-radius: 18px;
 }
 /* Contact Section Page */
 #contact {
