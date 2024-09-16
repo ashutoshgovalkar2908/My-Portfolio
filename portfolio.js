@@ -41,11 +41,16 @@
  });
 
  let mini = document.querySelector(".mini");
+ let dwnArw = document.querySelector(".dwn-arw");
  document.querySelector(".mini-btn").addEventListener("click",()=>{
      if(mini.style.display === "none" || mini.style.display === ''){
         mini.style.display = "block";
+        dwnArw.classList.toggle('rotate-arrow');
+        dwnArw.classList.remove('rotate-arrow1')
      }
      else{
         mini.style.display = "none"
+        dwnArw.classList.toggle('rotate-arrow1');
+        dwnArw.classList.remove('rotate-arrow')
      }
  })
