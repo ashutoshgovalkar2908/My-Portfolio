@@ -481,6 +481,17 @@ p{
 .mini-btn{
     color: #ffffff;
 }
+.mini-btn span img{
+    width: 12px;
+    margin: 5px 0px 0px 3px;
+    filter: invert(1);
+}
+.rotate-arrow{
+    transform: rotate(180deg);
+}
+.rotate-arrow1{
+    transform: rotate(0deg);
+}
 .miniProject-section,
 .mini-projects{
     width: 100%;
@@ -499,25 +510,49 @@ p{
     flex-wrap: wrap;
     gap: 20px;
 }
-.miniProjects-boxes div{
-    width: 25%;
+.miniParent{
+    position: relative;
+    width: 20%;
+    height: 200px;
     border: 1px solid black;
+    overflow: hidden;
 }
-.miniProjects-boxes div a{
-    display: inline-block;
+.projectLink{
+    display: none;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+}
+.projectLink img{
+    width: 100%;
+    height: 100%;
+}
+.MiniProjectName{
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+    text-transform: uppercase;
+    background-color: gainsboro;
+}
+.MiniProjectName h4{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.miniParent:hover .MiniProjectName{
+    display: none;
+    position: relative;
+    top: -203px;   
+}
+.miniParent:hover .projectLink{
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.3);
+}
 
-}
-.miniProjects-boxes div a img{
-    width: 100%;
-    height: 100%;
-}
-.miniProjects-boxes div,
-.miniProjects-boxes div a,
-.miniProjects-boxes div a img{
-    border-radius: 18px;
-}
+
 /* Contact Section Page */
 #contact {
     padding: var(--section-padding);
