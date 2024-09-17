@@ -36,6 +36,12 @@
         text-align: center;
         font-size: 2vw;
     }
+    .miniProjects-boxes{
+        flex-wrap: wrap;
+    }
+    .miniParent{
+        width: 30%;
+    }
 }
 
 @media screen and (min-width:640px) and (max-width:768px) {
@@ -140,6 +146,12 @@
     .about-project{
         text-align: center;
         font-size: 2.5vw;
+    }
+    .miniProjects-boxes{
+        flex-wrap: wrap;
+    }
+    .miniParent{
+        width: 40%;
     }
 }
 
@@ -284,6 +296,12 @@
     .about-project{
         text-align: center;
         font-size: 3.2vw;
+    }
+    .miniProjects-boxes{
+        flex-wrap: wrap;
+    }
+    .miniParent{
+        width: 45%;
     }
     #contact{
         padding: 5rem 0;
@@ -476,6 +494,12 @@
     .about-project{
         text-align: center;
         font-size: 4vw;
+    }
+    .miniProjects-boxes{
+        flex-wrap: wrap;
+    }
+    .miniParent{
+        width: 45%;
     }
     #contact{
         padding: 5rem 0;
@@ -696,6 +720,15 @@
     .about-project{
         text-align: center;
         font-size: 0.95rem;
+    }
+    .miniProjects-boxes{
+        flex-wrap: wrap;
+    }
+    .miniParent{
+        width: 45%;
+    }
+    .MiniProjectName{
+        font-size: 1.33rem;
     }
     #contact{
         padding: 4.8rem 0;
