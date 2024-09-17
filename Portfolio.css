@@ -514,8 +514,10 @@ p{
     position: relative;
     width: 20%;
     height: 200px;
-    border: 1px solid black;
+    border: 1px solid var(--bg-purple);
+    border-radius: 8px;
     overflow: hidden;
+    background-color: gainsboro;
 }
 .projectLink{
     display: none;
@@ -530,15 +532,15 @@ p{
 .MiniProjectName{
     width: 100%;
     height: 100%;
-    font-size: 22px;
+    font-size: 1.5rem;
+    padding: 8px;
     text-transform: uppercase;
-    background-color: gainsboro;
 }
 .MiniProjectName h4{
     height: 100%;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    text-align: center;
 }
 .miniParent:hover .MiniProjectName{
     display: none;
