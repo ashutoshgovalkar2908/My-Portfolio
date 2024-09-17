@@ -40,6 +40,7 @@
      });
  });
 
+ // function for toggle mini project button
  let mini = document.querySelector(".mini");
  let dwnArw = document.querySelector(".dwn-arw");
  document.querySelector(".mini-btn").addEventListener("click",()=>{
