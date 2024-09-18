@@ -209,13 +209,23 @@ p{
 
 /* Home Page */
 .home {
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-image: url(./Img/portfolio_bg.jpg);
     background-size: cover;
+    padding-block: 1.2rem;
 }
-
+.home-content1{
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 40px;
+    margin-top: 4rem;
+}
+.home-content2{
+    width: 100%;
+    justify-content: center
+}
 #social-link-section {
     width: 4rem;
     max-height: 330px;
@@ -459,10 +469,12 @@ p{
     font-weight: 400;
     font-size: 1.3vw;
 }
-.project-button{
+.project-button,
+.resume-button{
     padding-block: 15px;
 }
-.project-button button{
+.project-button button,
+.resume-button button{
     padding: 17px 50px;
     border-radius: 8px;
     font-size: 1rem;
@@ -473,11 +485,13 @@ p{
     border: none;
     transition: .33s ease-in-out;
 }
-.project-button button:hover{
+.project-button button:hover,
+.resume-button button:hover{
     transform: translateY(-5px);
     background-color:rgb(141, 64, 242) ;
 }
 .project-button button a,
+.resume-button button a,
 .mini-btn{
     color: #ffffff;
 }
