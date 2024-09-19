@@ -16,7 +16,16 @@
     width: 100%;
     min-height: 100vh;
 }
-
+.w-100{
+    width: 100%;
+}
+.h-100{
+    height: 100%;
+}
+.wh-100{
+    width: 100%;
+    height: 100%;
+}
 .flex {
     display: flex;
 }
@@ -55,7 +64,6 @@ p{
 /* Header and navbaar */
 .header {
     position: fixed;
-    width: 100%;
     height: 100px;
     z-index: 1;
 }
@@ -63,7 +71,6 @@ p{
 .nav {
     align-items: center;
     justify-content: space-between;
-    width: 100%;
     height: 90px;
     background-color:var(--bgColor-primary);
 }
@@ -84,8 +91,6 @@ p{
 }
 
 .logo img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     border-radius: 50%;
     cursor: pointer;
@@ -112,7 +117,6 @@ p{
     top: 75px;
     right: -50%;
     display: none;
-    width: 100%;
     z-index: 999;
 }
 .nav-menu2-display{
@@ -150,7 +154,6 @@ p{
 .content-links {
     justify-content: flex-end;
     align-items: center;
-    width: 100%;
     height: 60px;
     margin: 4px 0px;
     gap: 30px;
@@ -158,7 +161,6 @@ p{
 }
 
 .nav .hamberger-icon img {
-    width: 100%;
     height: 40px;
 }
 
@@ -224,7 +226,6 @@ p{
     margin-top: 4rem;
 }
 .home-content2{
-    width: 100%;
     justify-content: center
 }
 #social-link-section {
@@ -241,7 +242,6 @@ p{
 
 .social-icons-links {
     display: block;
-    width: 100%;
     border-radius: 6px;
     transition: 0.19s ease-in;
 }
@@ -254,7 +254,6 @@ p{
 } */
 
 .social-icons-links-logo {
-    width: 100%;
     margin-top: 4px;
 }
 .social-icons-links:hover {
@@ -272,13 +271,10 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 100%;
-    width: 100%;
     padding-inline: 13px;
 }
 
 .myname {
-    width: 100%;
     font-weight: 600;
 }
 
@@ -294,7 +290,6 @@ p{
 }
 
 .info {
-    width: 100%;
     margin-top: 30px;
 }
 
@@ -303,8 +298,6 @@ p{
     font-size: 1.5rem;
     font-family: inherit;
     padding-inline: 20vw
-    /* width: 75%;
-    margin: 0 auto; */
 }
 
 /* About Section Page */
@@ -312,7 +305,6 @@ p{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
     background: #fafafa;
     padding-top: var(--section-padding);
     font-family: "Roboto", sans-serif;
@@ -350,8 +342,6 @@ p{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
-
 }
 
 .spn {
@@ -394,7 +384,6 @@ p{
 }
 
 .skills {
-    width: 100%;
     justify-content: center;
     flex-wrap: wrap;
     align-content: space-evenly;
@@ -415,14 +404,12 @@ p{
 
 /* Projects Section Page */
 #projects-section{
-    width: 100%;
     background-color: var(--sec-bgColor);
 }
 .project-container{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
     background: #fafafa;
     padding-top: var(--section-padding);
     font-family: "Roboto", sans-serif;
@@ -444,7 +431,6 @@ p{
 }
 .project-detail{
     padding: 7px 20px;
-    width: 100%;
 }
 .image{
     width: 80%;
@@ -452,7 +438,6 @@ p{
     padding-block:17px;
 }
 .image img{
-    width: 100%;
     object-fit: cover;
 }
 .project-name-details{
@@ -507,10 +492,6 @@ p{
 .rotate-arrow1{
     transform: rotate(0deg);
 }
-.miniProject-section,
-.mini-projects{
-    width: 100%;
-}
 .mini-projects{
     justify-content: center;
 }
@@ -519,7 +500,6 @@ p{
     margin-block: 15px;
 }
 .miniProjects-boxes{
-    width: 100%;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
@@ -535,19 +515,13 @@ p{
 }
 .projectLink{
     display: block;
-    width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 .projectLink img{
     opacity: 0;
-    width: 100%;
-    height: 100%;
     transition: 0.6s ease-in-out;
 }
 .MiniProjectName{
-    width: 100%;
-    height: 100%;
     position: absolute;
     top: 0px;
     font-size: 1.5rem;
@@ -556,7 +530,6 @@ p{
     transition: 0.7s ease-in-out;
 }
 .MiniProjectName h4{
-    height: 100%;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -584,12 +557,10 @@ p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
     min-height: 100vh;
 }
 
 .contact-form {
-    width: 100%;
     font-family: "Roboto", sans-serif;
 }
 
@@ -608,7 +579,6 @@ p{
 }
 
 .inner-box .contact-form-box {
-    width: 100%;
     margin-top: 10px;
 }
 
@@ -678,7 +648,6 @@ p{
 
 /* Footer Section */
 .footer-section{
-    width: 100%;
     background-color: #000;
 }
 .footer-container{
@@ -686,9 +655,6 @@ p{
     margin: auto;
     width: 92%;
     padding-top: 40px;
-}
-.upper-footer,.lower-footer{
-    width: 100%;
 }
 .upper-footer{
     justify-content: space-between;
