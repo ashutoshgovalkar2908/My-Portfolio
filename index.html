@@ -353,8 +353,7 @@
                     <div class="contact-form w-100">
                         <div class="inner-box">
                             <div class="contact-form-box w-100">
-                                <form action="connect.php" method="post" autocomplete="off">
-                                    <header>
+                                <form action="connect.php" method="post" autocomplete="off" id="contForm">
                                         <div class="contact-info">
                                             <div>
                                                 <label for="fullname">Name:</label>
@@ -369,15 +368,15 @@
                                             <div>
                                                 <label for="message">Message</label>
                                                 <textarea name="message" id="message" name="message" cols="30" rows="10"
-                                                    placeholder="Enter Your Message" wrap="hard" required></textarea>
+                                                    placeholder="Enter Your Message" wrap="hard"></textarea>
                                             </div>
                                             <div id="submit-btn">
                                                 <input type="submit" value="Submit" name="submit" class="login">
                                             </div>
                                         </div>
-                                    </header>
                                 </form>
                             </div>
+                            <p id="errorMessage"></p>
                         </div>
                     </div>
                 </div>
