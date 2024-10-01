@@ -515,6 +515,9 @@
     .contact-info div input[type="submit"] {
         width: 100%;
     }
+    #errorMessage{
+        text-align: center;
+    }
     .footer-container{
         padding: 0;
     }
@@ -747,6 +750,9 @@
 
     .contact-info div input[type="submit"] {
         width: 100%;
+        text-align: center;
+    }
+    #errorMessage{
         text-align: center;
     }
     .footer-container{
