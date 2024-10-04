@@ -1,6 +1,8 @@
 
     // EvenListener for creat username
-    document.querySelector('#btn').addEventListener('click', function () {
+    document.querySelector('#btn').addEventListener('click', userName);
+
+    function userName() {
 
     // accessing inputs field
     let firstName = document.querySelector("#firstname");
@@ -35,18 +37,18 @@
     firstName = firstName.toLowerCase();
     lastName = lastName.toLowerCase();
 
-    let rand = Math.floor(Math.random() * 89) + 11; // creat random numbers between 11-99
+    let randomNum = Math.floor(Math.random() * 89) + 11; // creat random numbers between 11-99
     let username1, username2, username3, username4, username5;
 
-    username1 = `${firstName.slice(0, 4)}_${lastName.slice(0, 4)}${rand}`;
-    rand = Math.floor(Math.random() * 89) + 11;
-    username2 = `_${lastName.slice(0, 3)}_${firstName.slice(0, 5)}${rand}`;
-    rand = Math.floor(Math.random() * 89) + 11;
-    username3 = `${lastName.slice(0, 5)}_${firstName.slice(0, 5)}_${rand}`;
-    rand = Math.floor(Math.random() * 89) + 11;
-    username4 = `_${firstName}_${lastName.slice(0, 3)}_${rand}`;
-    rand = Math.floor(Math.random() * 89) + 11;
-    username5 = `_${firstName}_${lastName}${rand}`;
+    username1 = `${lastName}_${firstName}${randomNum}`;
+    randomNum = Math.floor(Math.random() * 89) + 11;
+    username2 = `_${lastName.slice(0, 3)}_${firstName.slice(0, 5)}${randomNum}`;
+    randomNum = Math.floor(Math.random() * 89) + 12;
+    username3 = `${lastName.slice(0, 5)}_${firstName.slice(0, 5)}_${randomNum}`;
+    randomNum = Math.floor(Math.random() * 89) + 13;
+    username4 = `_${firstName}_${lastName.slice(0, 2)}_${randomNum}`;
+    randomNum = Math.floor(Math.random() * 89) + 14;
+    username5 = `_${firstName}_${lastName}${randomNum}`;
 
     let output1 = document.querySelector("#output1");
     let output2 = document.querySelector("#output2");
@@ -67,8 +69,7 @@
     outputbox.style.display = "block";
     backButton.style.display = "block";
 
-})
-
+}
     // EventListener on output box to close.
     document.querySelector('.back-button').addEventListener('click', function () {
 
