@@ -65,4 +65,7 @@
     .close img {
         width: 20px;
     }
+    .output-box{
+        width: 300px;
+    }
 }
