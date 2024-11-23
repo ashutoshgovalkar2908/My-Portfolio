@@ -14,6 +14,10 @@
     .inner-box{
         width: 100%;
     }
+    .skills-div {
+        width: 100%;
+        gap: 5px;
+    }
     .upper-footer{
         margin-bottom: 15px;
     }
@@ -118,6 +122,10 @@
     .short-info {
         font-size: 0.99rem;
         padding-inline: 20px;
+    }
+    .skills-div {
+        width: 100%;
+        gap: 5px;
     }
     #contact{
         padding-inline: 4rem;
@@ -257,9 +265,6 @@
 
     .skills {
         width: 100%;
-        justify-content: center;
-        align-content: baseline;
-        gap: 10px;
         font-size: 0.8rem;
         margin-top: 15px;
     }
@@ -268,8 +273,9 @@
         margin-top: 30px;
     }
 
-    .skills div {
-        height: 43px;
+    .skills-div {
+        width: 100%;
+        gap: 5px;
     }
 
     .inner-box {
@@ -449,9 +455,6 @@
 
     .skills {
         width: 100%;
-        justify-content: center;
-        align-content: baseline;
-        gap: 10px;
         font-size: 0.8rem;
         margin-top: 15px;
     }
@@ -460,8 +463,9 @@
         margin-top: 30px;
     }
 
-    .skills div {
-        height: 43px;
+    .skills-div {
+        width: 100%;
+        gap: 0;
     }
 
     .inner-box {
@@ -680,15 +684,13 @@
 
     .skills {
         width: 100%;
-        justify-content: center;
-        align-content: baseline;
-        /* gap: 10px; */
         font-size: 0.8rem;
         margin-top: 20px;
     }
 
-    .skills div {
-        height: 44px;
+    .skills-div {
+        width: 100%;
+        gap: 0;
     }
 
     .inner-box {
