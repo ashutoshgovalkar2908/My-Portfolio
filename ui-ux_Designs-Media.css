@@ -1,0 +1,244 @@
+@media (min-width: 769px) and (max-width: 992px){
+    .container{
+        width: 100%;
+        padding: 25px 20px;
+        row-gap: 2rem;
+    }
+    .project-container{
+        gap: 2rem;
+    }
+    .project-heading h2{
+        font-size: 8vw;
+    }
+    .project-info{
+        margin-top: 20px;
+    }
+    .project-info p{
+        font-size: 5.5vw;
+    }
+    .more-about{
+        gap: 4px;
+    }
+    .more-about h4{
+        font-size: 5vw;
+    }
+    .more-about img{
+        width: 20px;
+    }
+    .more-about  a img{
+        width: 35px;
+    }
+    .section{
+        padding: 20px 10px;
+        margin-bottom: 5px;
+    }
+    .title{
+        width: 100%;
+    }
+    .title h2{
+        font-size: 5.5vw;
+    }
+    .designs{
+        row-gap: 32px;
+        column-gap: 40px;
+    }
+    .designs img{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:768px) {
+    .container{
+        width: 100%;
+        padding: 25px 20px;
+        row-gap: 2rem;
+    }
+    .project-container{
+        gap: 2rem;
+    }
+    .project-heading h2{
+        font-size: 8vw;
+    }
+    .project-info{
+        margin-top: 20px;
+    }
+    .project-info p{
+        font-size: 5.5vw;
+    }
+    .more-about{
+        gap: 4px;
+    }
+    .more-about h4{
+        font-size: 5vw;
+    }
+    .more-about img{
+        width: 20px;
+    }
+    .more-about  a img{
+        width: 35px;
+    }
+    .section{
+        padding: 20px 10px;
+        margin-bottom: 5px;
+    }
+    .title{
+        width: 100%;
+    }
+    .title h2{
+        font-size: 5.5vw;
+    }
+    .designs{
+        row-gap: 32px;
+        column-gap: 40px;
+    }
+    .designs img{
+        width: 40%;
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:640px) {
+    .container{
+        width: 100%;
+        padding: 25px 20px;
+        row-gap: 2rem;
+    }
+    .project-container{
+        gap: 2rem;
+    }
+    .project-heading h2{
+        font-size: 8vw;
+    }
+    .project-info{
+        margin-top: 20px;
+    }
+    .project-info p{
+        font-size: 5.5vw;
+    }
+    .more-about{
+        gap: 4px;
+    }
+    .more-about h4{
+        font-size: 5vw;
+    }
+    .more-about img{
+        width: 20px;
+    }
+    .more-about  a img{
+        width: 35px;
+    }
+    .section{
+        padding: 20px 10px;
+        margin-bottom: 5px;
+    }
+    .title{
+        width: 100%;
+    }
+    .title h2{
+        font-size: 5.5vw;
+    }
+    .designs{
+        row-gap: 32px;
+        column-gap: 40px;
+    }
+    .designs img{
+        width: 40%;
+    }
+}
+
+@media  screen and (max-width:426px) and (min-width:321px) {
+    .container{
+        width: 100%;
+        padding: 25px 20px;
+        row-gap: 2rem;
+    }
+    .project-container{
+        gap: 2rem;
+    }
+    .project-heading h2{
+        font-size: 8vw;
+    }
+    .project-info{
+        margin-top: 20px;
+    }
+    .project-info p{
+        font-size: 5.5vw;
+    }
+    .more-about{
+        gap: 4px;
+    }
+    .more-about h4{
+        font-size: 5vw;
+    }
+    .more-about img{
+        width: 20px;
+    }
+    .more-about  a img{
+        width: 35px;
+    }
+    .section{
+        padding: 20px 10px;
+        margin-bottom: 5px;
+    }
+    .title{
+        width: 100%;
+    }
+    .title h2{
+        font-size: 5.5vw;
+    }
+    .designs{
+        row-gap: 32px;
+        column-gap: 40px;
+    }
+    .designs img{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .container{
+        width: 100%;
+        padding: 25px 20px;
+        row-gap: 2rem;
+    }
+    .project-container{
+        gap: 2rem;
+    }
+    .project-heading h2{
+        font-size: 8vw;
+    }
+    .project-info{
+        margin-top: 20px;
+    }
+    .project-info p{
+        font-size: 5.5vw;
+    }
+    .more-about{
+        gap: 4px;
+    }
+    .more-about h4{
+        font-size: 5vw;
+    }
+    .more-about img{
+        width: 20px;
+    }
+    .more-about  a img{
+        width: 35px;
+    }
+    .section{
+        padding: 20px 10px;
+        margin-bottom: 5px;
+    }
+    .title{
+        width: 100%;
+    }
+    .title h2{
+        font-size: 5.5vw;
+    }
+    .designs{
+        row-gap: 32px;
+        column-gap: 40px;
+    }
+    .designs img{
+        width: 40%;
+    }
+}
