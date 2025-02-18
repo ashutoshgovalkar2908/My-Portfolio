@@ -50,6 +50,12 @@
     .project-name{
         text-align: center;
     }
+    .Web_dev-project-wrapper{
+        width: 92%;
+    }
+    .project-wrapper{
+        padding: 40px 30px;
+    }
     .about-project{
         text-align: center;
         font-size: 2vw;
@@ -170,8 +176,8 @@
         flex-direction: column;
     }
     .project-image{
-        padding: 22px;
-        width: 80%;
+        padding: 10px;
+        width: 100%;
     }
     .project-image h2{
         font-size: 3.8vw;
@@ -327,7 +333,7 @@
         width: 90%;
     }
     .project-wrapper{
-        padding: 30px;
+        padding: 40px;
     }
     .Web_dev-project-wrapper{
         width: 100%;
@@ -342,7 +348,7 @@
         text-align: center;
     }
     .project-image{
-        padding: 15px;
+        padding: 8px;
         width: 100%;
     }
     .project-image h2{
@@ -538,7 +544,7 @@
         width: 90%;
     }
     .project-wrapper{
-        padding: 20px;
+        padding: 25px;
     }
     .Web_dev-project-wrapper{
         width: 100%;
@@ -559,7 +565,7 @@
         text-align: center;
     }
     .project-image{
-        padding: 15px;
+        padding: 5px;
         width: 100%;
     }
     .project-image h2{
@@ -803,7 +809,7 @@
         text-align: center;
     }
     .project-image{
-        padding: 15px;
+        padding: 5px;
         width: 100%;
     }
     .project-image h2{

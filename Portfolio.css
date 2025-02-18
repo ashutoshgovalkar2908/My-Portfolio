@@ -11,7 +11,6 @@
     text-decoration: none;
 }
 
-
 .vw-vh {
     width: 100%;
     min-height: 100vh;
@@ -443,6 +442,10 @@ p{
     border: 3px solid #9163af;
     border-radius: 10px;
     box-shadow: 4px 4px 10px gray;
+    transition: 0.25s ease-in;
+}
+.project-image:hover{
+    transform: scale(1.02);
 }
 .project-image h2{
     font-size: 2.2vw;
