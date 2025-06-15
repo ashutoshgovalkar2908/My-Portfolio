@@ -238,6 +238,11 @@
         display: block;
     }
 
+   .nav .hamberger-icon #open-icon {
+        padding: 4px;
+        width: 100%;
+    }
+
     #social-link-section {
         display: none;
     }
@@ -446,6 +451,11 @@
 
     .nav .hamberger-icon {
         display: block;
+    }
+    
+    .nav .hamberger-icon #open-icon {
+        padding: 4px;
+        width: 40px;
     }
 
     #social-link-section {
@@ -671,15 +681,12 @@
 
     .nav .hamberger-icon {
         display: block;
+
     }
 
     .nav .hamberger-icon #open-icon {
         padding: 4px;
-        width: 100%;
-    }
-    .nav .hamberger-icon #open-icon {
-        padding: 4px;
-        width: 100%;
+        width: 40px;
     }
     .nav .hamberger-icon #close-icon {
         width: 100%;
