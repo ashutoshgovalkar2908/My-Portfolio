@@ -159,13 +159,16 @@ p{
     padding-inline: 20px;
 }
 
-.nav .hamberger-icon img {
-    height: 40px;
-}
-
 .nav .hamberger-icon {
     display: none;
+    width: 40px;
 }
+
+.nav .hamberger-icon #open-icon
+,#close-icon {
+        padding: 4px;
+}
+
 .blur   {
     filter: blur(5px);
     -webkit-filter: blur(5px);
