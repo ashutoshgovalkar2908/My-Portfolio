@@ -767,7 +767,7 @@ p{
     text-decoration: underline;
 }
 .lower-footer::before{
-    content: '© Copyright 2024 . Made by ';
+    content: '© Copyright 2026 . Made by ';
     text-decoration: none;
     color: #eee;
     font-size: 0.77rem;
