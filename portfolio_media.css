@@ -460,9 +460,12 @@
     }
 
     .small-info .myname h1 {
-        font-size: 2.22rem;
+        font-size: 2rem;
         letter-spacing: 4px;
         padding-inline: 2px;
+    }
+    .myname span{
+        font-size: 1rem;
     }
 
     .info {
@@ -471,10 +474,16 @@
     }
 
     .small-info .info .text {
-        font-size: 1.2rem;
+        font-size: 1rem;
         padding-inline: 5vw;
     }
 
+    .btn button {
+        padding: 16px 25px;
+        border-radius: 8px;
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
     .heading {
         width: 100%;
         margin: 0;
@@ -689,8 +698,12 @@
        padding-inline: 10px;
     }
     .small-info .myname h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
         letter-spacing: 5px;
+    }
+
+    .myname span{
+        font-size: 1rem;
     }
 
     .info {
@@ -700,11 +713,17 @@
     }
 
     .small-info .info .text {
-        font-size: 1.2rem;
+        font-size: 1rem;
         width: 100%;
         padding-inline: 0vw;
     }
 
+    .btn button{
+        padding: 12px 25px;
+        border-radius: 8px;
+        font-size: 0.7rem;
+        font-weight: 600;
+    }
     .about-container {
         padding: 4.8rem 0 0 0;
     }
