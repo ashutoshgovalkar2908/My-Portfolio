@@ -179,12 +179,19 @@ p {
   width: 40px;
 }
 
-.nav .hamberger-icon #open-icon {
+#open-icon {
   padding: 2px;
 }
+
 .nav .hamberger-icon #close-icon {
   padding: 7px;
 }
+
+#open-icon,
+#close-icon{
+  filter: invert();
+}
+
 .blur {
   filter: blur(5px);
   -webkit-filter: blur(5px);
@@ -192,6 +199,7 @@ p {
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
 }
+
 .close {
   display: none;
   padding: 8px;
@@ -270,10 +278,6 @@ p {
 .btn-secondary{
   background-color: transparent;
   border: 2px solid var(--border);
-}
-
-.btn button a{
-  color: var(--text-primary);
 }
 
 .btn-secondary:hover{
