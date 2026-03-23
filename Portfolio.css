@@ -118,7 +118,7 @@ p {
   cursor: pointer;
 }
 .name:hover {
-  color: var(--bg-purple);
+  color: var(--accent-hover);
 }
 
 .nav-menu {
@@ -209,9 +209,9 @@ p {
 }
 
 .links:hover {
-  border: 1px solid var(--bg-purple);
+  border: 1px solid var(--accent-hover);
   border-radius: 30px;
-  color: var(--bg-purple);
+  color: var(--accent-hover);
 }
 
 .header-links:hover {
