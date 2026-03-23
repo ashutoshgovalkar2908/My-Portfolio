@@ -271,9 +271,16 @@ p {
   background-color: transparent;
   border: 2px solid var(--border);
 }
+
 .btn button a{
   color: var(--text-primary);
 }
+
+.btn-secondary:hover{
+  border: 2px solid var(--accent-color);
+  color: var(--accent-color);
+}
+
 #social-link-section {
   position: absolute;
   right: 0px;
