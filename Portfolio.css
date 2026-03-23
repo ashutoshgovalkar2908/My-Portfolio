@@ -62,9 +62,11 @@ p {
   --bg-purple: rgb(103, 1, 236);
   --bgColor-primary: #0a0a0f;
   --card-bg: #7c6fff14;
+  --card-fill: #ffffff08;
   --border : #7c6fff2e;
   --accent-color :#7c6fff;
   --accent-hover: #9b8fff;
+  --accent-glow: #7c6fff14;
   --section-padding: 6rem;
 }
 
@@ -243,6 +245,34 @@ p {
 }
 .home-content2 {
   justify-content: center;
+  gap: 20px;
+}
+
+.btn button{
+  padding: 16px 50px;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  /* background-color: var(--bg-purple); */
+  transition:
+    transform 0.33s ease,
+    background-position 1s ease; /* Smooth transition for background */
+}
+.btn-primary{
+  border: none;
+  background-image: linear-gradient(90deg, #3b2bb5, #7c6fff);
+  background-size: 200%; /* Larger size for smooth transition */
+  background-position: 0% 50%;
+}
+.btn-secondary{
+  background-color: transparent;
+  border: 2px solid var(--border);
+}
+.btn button a{
+  color: var(--text-primary);
 }
 #social-link-section {
   position: absolute;
@@ -286,6 +316,7 @@ p {
 
 .myname {
   font-weight: 600;
+  text-align: center;
 }
 
 .heading-primary {
@@ -294,13 +325,17 @@ p {
   font-weight: 800;
   padding-inline: 15px;
   letter-spacing: 3px;
-  color: var(--text-primary);
+  color: var(--accent-color);
   text-transform: uppercase;
   font-family: inherit;
 }
 
+.myname span{
+  color: var(--text-primary);
+  font-size: 2rem;
+}
 .info {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .text {
@@ -455,7 +490,7 @@ p {
   align-self: center;
   border: 3px solid var(--border);
   border-radius: 10px;
-  box-shadow: 4px 4px 10px gray;
+  box-shadow: 0 8px 32px rgba(124, 111, 255, 0.2);
   transition: 0.25s ease-in;
 }
 .project-image:hover {
@@ -501,43 +536,12 @@ p {
   font-weight: 400;
   font-size: 1.3vw;
 }
-.project-button,
-.resume-button {
-  padding-block: 15px;
-}
-.project-button button,
-.resume-button button {
-  border-radius: 8px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  text-transform: uppercase;
-  /* background-color: var(--bg-purple); */
-  background-image: linear-gradient(90deg, #3b2bb5, #7c6fff);
-  background-size: 200%; /* Larger size for smooth transition */
-  background-position: 0% 50%;
-  border: none;
-  transition:
-    transform 0.33s ease,
-    background-position 1s ease; /* Smooth transition for background */
-}
-.project-button button:hover,
-.resume-button button:hover {
+
+.btn button:hover {
   transform: translateY(-5px);
   background-position: 100% 50%; /* Gradually shifts the gradient */
 }
-.project-button button a,
-.resume-button button a {
-  padding: 17px 50px;
-  display: inline-block;
-  width: 100%;
-  color: #ffffff;
-}
-.mini-btn {
-  padding: 17px 50px;
-  width: 30%;
-  color: #ffffff;
-}
+
 .mini-btn span img {
   width: 12px;
   margin: 5px 0px 0px 3px;
@@ -656,14 +660,14 @@ p {
 
 .contact-info div input {
   width: 100%;
-  padding: 25px 10px;
+  padding: 20px 10px;
   font-size: 0.85rem;
-  color: #333333e3;
+  color: var(--text-primary);
   font-weight: 500;
   margin-top: 10px;
   border-radius: 5px;
   outline: none;
-  background-color: #f3f3f6;
+  background-color: var(--accent-glow);
   border: #e4e1e1;
 }
 .contact-info div textarea {
@@ -674,7 +678,7 @@ p {
   font-size: 0.85rem;
   color: var(--text-primary);
   font-weight: 500;
-  background-color: #f3f3f6;
+  background-color: var(--card-fill);
   border: #e4e1e1;
   outline: none;
   resize: none;
@@ -697,9 +701,7 @@ p {
   background-size: 200%; /* Larger size for smooth transition */
   background-position: 0% 50%;
   border: none;
-  transition:
-    transform 0.33s ease,
-    background-position 1s ease;
+  transition: transform 0.33s ease,background-position 1s ease;
 }
 
 .contact-info div input[type="submit"]:hover {
