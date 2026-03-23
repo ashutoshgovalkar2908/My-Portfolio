@@ -3,7 +3,11 @@
         padding-top: 18px;
     }
     .heading-primary {
-        font-size: 2.3rem;
+        font-size: 4vw;
+    }
+
+    .myname span{
+        font-size: 2.8vw;
     }
 
     .text {
@@ -115,8 +119,12 @@
         width: calc(100% - 3.8rem);
     }
 
-    #info-section .small-info .myname .heading-primary {
-        font-size: 2rem;
+    .heading-primary {
+        font-size: 4.2vw;
+    }
+
+    .myname span{
+        font-size: 3.1vw;
     }
 
     .info {
@@ -253,6 +261,10 @@
         letter-spacing: 3px;
     }
 
+    .myname span{
+        font-size: 3.5vw;
+    }
+
     .info {
         width: 100%;
         padding-inline: 10px;
@@ -264,6 +276,10 @@
         padding-inline: 5vw;
     }
 
+    .btn button{
+        padding: 14px 30px;
+    }
+    
     .heading {
         width: 100%;
         margin: 0;
@@ -460,12 +476,12 @@
     }
 
     .small-info .myname h1 {
-        font-size: 2rem;
+        font-size: 6vw;
         letter-spacing: 4px;
         padding-inline: 2px;
     }
     .myname span{
-        font-size: 1rem;
+        font-size: 4vw;
     }
 
     .info {
@@ -479,7 +495,7 @@
     }
 
     .btn button {
-        padding: 16px 25px;
+        padding: 16px 30px;
         border-radius: 8px;
         font-size: 0.7rem;
         font-weight: 600;
@@ -719,7 +735,7 @@
     }
 
     .btn button{
-        padding: 12px 25px;
+        padding: 14px 30px;
         border-radius: 8px;
         font-size: 0.7rem;
         font-weight: 600;
