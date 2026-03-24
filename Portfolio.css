@@ -414,8 +414,6 @@ p {
 }
 
 .short-info {
-  width: 658px;
-  height: 80px;
   margin-top: 10px;
   text-align: center;
   color: var(--text-secondary);
@@ -487,10 +485,7 @@ p {
   flex-direction: column;
   align-items: center;
 }
-.Web_dev-project-wrapper {
-  width: 90%;
-  margin: auto;
-}
+
 .projects {
   width: 90%;
   margin: auto;
