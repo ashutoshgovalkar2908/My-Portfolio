@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--bgColor-primary);
+}
+
+.Web_dev-project-wrapper{
+    width: 100%;
+    padding: 50px 80px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.project-outer{
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.project-image,
+.project-detail{
+    width: 50%;
+}
+
+.web_dev-image img{
+    width: 100%;
+}
