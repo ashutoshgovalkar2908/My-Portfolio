@@ -256,8 +256,8 @@
         width: 100%;
     }
 
-    .small-info .myname h1 {
-        font-size: 2rem;
+    .heading-primary {
+        font-size: 6vw;
         letter-spacing: 3px;
     }
 
@@ -271,8 +271,8 @@
         margin-top: 20px;
     }
 
-    .small-info .info .text {
-        font-size: 1.2rem;
+    .text {
+        font-size: 3.2dvw;
         padding-inline: 5vw;
     }
 
@@ -414,7 +414,7 @@
     }
     .upper-footer{
         flex-direction: column;
-        row-gap: 15px;
+        row-gap: 10px;
     }
     .upper-footer-name{
         padding: 10px 0;
@@ -427,10 +427,12 @@
     }
     .upper-footer-name p{
         font-size: 0.8rem;
-        margin-top: 1.1rem;
     }
     .upper-footer-social{
-        padding-block: 10px 20px;
+        padding-block: 0px 20px;
+    }
+    .footer-social{
+        gap: 0px;
     }
     .footer-social a img{
         width: 28px;
@@ -475,7 +477,7 @@
         width: 100%;
     }
 
-    .small-info .myname h1 {
+    .heading-primary {
         font-size: 6vw;
         letter-spacing: 4px;
         padding-inline: 2px;
@@ -489,8 +491,8 @@
         margin-top: 20px;
     }
 
-    .small-info .info .text {
-        font-size: 1rem;
+    .text {
+        font-size: 4.2dvw;
         padding-inline: 5vw;
     }
 
@@ -643,7 +645,7 @@
     }
     .upper-footer{
         flex-direction: column;
-        row-gap: 15px;
+        row-gap: 10px;
     }
     .upper-footer-name{
         padding: 10px 0px;
@@ -656,7 +658,9 @@
     }
     .upper-footer-name p{
         font-size: 0.8rem;
-        margin-top: 1.1rem;
+    }
+    .footer-social{
+        gap: 0px;
     }
     .upper-footer-social{
        padding-block: 0px 20px;
@@ -665,6 +669,7 @@
         width: 28px;
         margin: 0 10px 0 0 ;
     }
+
 }
 
 @media screen and (max-width:320px) {
@@ -713,13 +718,13 @@
     .small-info{
        padding-inline: 10px;
     }
-    .small-info .myname h1 {
-        font-size: 1.8rem;
+    .heading-primary {
+        font-size: 7.8vw;
         letter-spacing: 5px;
     }
 
     .myname span{
-        font-size: 1rem;
+        font-size: 4.8vw;
     }
 
     .info {
@@ -728,8 +733,8 @@
         margin-top: 20px;
     }
 
-    .small-info .info .text {
-        font-size: 1rem;
+    .text {
+        font-size: 4.2dvw;
         width: 100%;
         padding-inline: 0vw;
     }
@@ -898,7 +903,7 @@
     }
     .upper-footer{
         flex-direction: column;
-        row-gap: 15px;
+        row-gap: 10px;
     }
     .upper-footer-name{
         padding: 10px 0;
@@ -911,10 +916,14 @@
     }
     .upper-footer-name p{
         font-size: 0.8rem;
-        margin-top: 1.1rem;
+        margin-top: 0.5rem;
     }
     .upper-footer-social{
         padding-block: 0px 20px;
+    }
+    .footer-social{
+        gap: 0px;
+        margin-top: 0.5rem;
     }
     .footer-social a img{
         width: 28px;
