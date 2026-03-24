@@ -55,9 +55,7 @@
     .project-name{
         text-align: center;
     }
-    .Web_dev-project-wrapper{
-        width: 92%;
-    }
+
     .project-wrapper{
         padding: 10px 60px;
     }
@@ -352,9 +350,7 @@
     .project-wrapper{
         padding: 20px 40px;
     }
-    .Web_dev-project-wrapper{
-        width: 100%;
-    }
+
     .project-outer{
         flex-direction: column;
         gap: 40px;
@@ -574,9 +570,7 @@
     .project-wrapper{
         padding: 30px 20px;
     }
-    .Web_dev-project-wrapper{
-        width: 100%;
-    }
+
     .project-container{
         padding-top: 4.8rem;
     }
@@ -822,9 +816,7 @@
     .project-wrapper{
         padding: 20px;
     }
-    .Web_dev-project-wrapper{
-        width: 100%;
-    }
+
     .projects{
         width: 100%;
         padding: 10px;
