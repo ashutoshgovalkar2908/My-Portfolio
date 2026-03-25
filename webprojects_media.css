@@ -1,0 +1,14 @@
+@media screen and (max-width:320px){
+    .Web_dev-project-wrapper {
+        padding: 40px 20px;
+    }
+
+    .web-project-outer{
+        flex-direction: column;
+    }
+
+    .web-project-image{
+        width: 90%;
+        padding: 10px;
+    }
+}
