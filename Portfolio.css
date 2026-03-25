@@ -519,12 +519,7 @@ p {
   margin: auto;
   padding-block: 17px;
 }
-.web_dev-image {
-  width: 100%;
-}
-.web_dev-image img {
-  border-radius: 10px;
-}
+
 .image img {
   object-fit: cover;
 }
