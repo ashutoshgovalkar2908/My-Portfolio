@@ -21,18 +21,33 @@ body {
     gap: 60px;
 }
 
-.project-outer{
+.web-project-outer{
     justify-content: center;
     align-items: center;
     flex-direction: row;
     gap: 40px;
 }
 
-.project-image,
+.web-project-image{
+    padding: 20px 20px;
+    border-radius: 15px;
+    border: 3px solid var(--border);
+    box-shadow: 0 8px 32px rgba(124, 111, 255, 0.2);
+    transition: 0.25s ease-in;
+}
+
+.web-project-image,
 .project-detail{
     width: 50%;
+    height: stretch;
 }
 
 .web_dev-image img{
-    width: 100%;
+  width: 100%;
+  border-radius: 5px;
+  align-self: center;
+}
+
+.case-btn{
+    margin-top: 16px;
 }
