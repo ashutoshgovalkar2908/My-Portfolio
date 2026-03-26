@@ -1,14 +1,201 @@
 @media screen and (max-width:320px){
+
+    .web-project-heading h2{
+        font-size: 6vw;
+    }
+
     .Web_dev-project-wrapper {
         padding: 40px 20px;
+        gap: 35px;
     }
 
     .web-project-outer{
         flex-direction: column;
+        gap: 15px;
     }
 
     .web-project-image{
         width: 90%;
         padding: 10px;
+    }
+
+    .web-project-detail{
+        width: 100%;
+    }
+
+    .we-project-name{
+        font-size: 5.5vw;
+        padding: 0px;
+    }
+
+    .btn .web-btn{
+        padding: 10px 30px;
+        font-size: 3.5vw;
+    }
+
+    .web-short-info{
+        padding-inline: 4vw;
+        font-size: 4vw;
+    }
+}
+
+@media  screen and (max-width:426px) and (min-width:321px){
+
+    .web-project-heading h2{
+        font-size: 6vw;
+    }
+
+    .Web_dev-project-wrapper {
+        padding: 40px 20px;
+        gap: 35px;
+    }
+
+    .web-project-outer{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .web-project-image{
+        width: 90%;
+        padding: 10px;
+    }
+
+    .web-project-detail{
+        width: 100%;
+    }
+
+    .we-project-name{
+        font-size: 5.5vw;
+        padding: 0px;
+    }
+
+    .btn .web-btn{
+        padding: 10px 30px;
+        font-size: 3.5vw;
+    }
+
+    .web-short-info{
+        padding-inline: 4vw;
+        font-size: 4vw;
+    }
+}
+
+@media screen and (min-width:426px) and (max-width:640px){
+    .web-project-heading h2{
+        font-size: 5.5vw;
+    }
+
+    .Web_dev-project-wrapper {
+        padding: 40px 20px;
+        gap: 35px;
+    }
+
+    .web-project-outer{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .web-project-image{
+        width: 90%;
+        padding: 10px;
+    }
+
+    .web-project-detail{
+        width: 100%;
+    }
+
+    .we-project-name{
+        font-size: 5.5vw;
+        padding: 0px;
+    }
+
+    .btn .web-btn{
+        padding: 10px 30px;
+        font-size: 3.5vw;
+    }
+
+    .web-short-info{
+        padding-inline: 4vw;
+        font-size: 3vw;
+    } 
+}
+
+@media screen and (min-width:640px) and (max-width:768px){
+    .web-project-heading h2{
+        font-size: 4.5vw;
+    }
+
+    .Web_dev-project-wrapper {
+        padding: 40px 100px;
+        gap: 45px;
+    }
+
+    .web-project-outer{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .web-project-image{
+        width: 90%;
+        padding: 10px;
+    }
+
+    .web-project-detail{
+        width: 100%;
+    }
+
+    .we-project-name{
+        font-size: 4vw;
+        padding: 0px;
+    }
+
+    .btn .web-btn{
+        padding: 15px 50px;
+        font-size: 2vw;
+    }
+
+    .web-short-info{
+        padding-inline: 4vw;
+        font-size: 2.5vw;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .web-project-heading h2{
+        font-size: 3vw;
+    }
+
+    .Web_dev-project-wrapper {
+        padding: 40px 80px;
+        gap: 45px;
+    }
+
+    .web-project-outer{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .web-project-image{
+        width: 90%;
+        padding: 10px;
+    }
+
+    .web-project-detail{
+        width: 100%;
+    }
+
+    .we-project-name{
+        font-size: 2.8vw;
+        padding: 0px;
+    }
+
+    .btn .web-btn{
+        padding: 15px 50px;
+        font-size: 2vw;
+    }
+
+    .web-short-info{
+        padding-inline: 4vw;
+        font-size: 2vw;
     }
 }
