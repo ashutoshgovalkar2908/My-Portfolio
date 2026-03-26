@@ -12,6 +12,24 @@ body {
   background-color: var(--bgColor-primary);
 }
 
+.web-project-heading{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.web-project-heading h2{
+  font-size: 2vw;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+  color: var(--text-primary);
+}
+
+.we-project-name{
+  font-size: 2vw;
+}
+
 .Web_dev-project-wrapper{
     width: 100%;
     padding: 50px 80px;
@@ -24,8 +42,8 @@ body {
 .web-project-outer{
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    gap: 40px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .web-project-image{
@@ -37,7 +55,7 @@ body {
 }
 
 .web-project-image,
-.project-detail{
+.web-project-detail{
     width: 50%;
     height: stretch;
 }
@@ -46,6 +64,19 @@ body {
   width: 100%;
   border-radius: 5px;
   align-self: center;
+}
+
+.web-project-detail{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.web-short-info{
+  padding-inline: 12vw;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 1.2vw;
 }
 
 .case-btn{
