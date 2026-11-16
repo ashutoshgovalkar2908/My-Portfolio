@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link rel="stylesheet" href="guessNum.css">
+</head>
+
+<body class="bg-black">
+    <div class="outerDiv">
+        <div class="innerDiv">
+            <h1>Guess The Number</h1>
+            <div class="inOut">
+                <div class="guesses">
+                    <div id="userNumber" class="input">
+                        <span>Your Guess</span>
+                        <input type="number" id="in" class="inputBox" placeholder="Enter Number(1-10)" min="1" max="10">
+                    </div>
+                    <div id="result" class="input">
+                        <span>Result</span>
+                        <div id="ans" class="inputBox"></div>
+                    </div>
+                </div>
+                <p class="remainingGuess">Remaining Guess - 5/5</p>
+                <div class="buttons">
+                    <button type="button" id="resultBtn">Click For Result</button>
+                    <button type="button" id="resetBtn">End Game</button>
+                </div>
+                <div class="errorMessage"></div>
+            </div>
+        </div>
+    </div>
+<script src="guessNum.js"></script>    
+</body>
+</html>

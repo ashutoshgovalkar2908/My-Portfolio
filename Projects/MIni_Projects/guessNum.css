@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.bg-black{
+    background-color: #1e1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outerDiv{
+    width: 100dvw;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.innerDiv{
+    width: 50%;
+    height: auto;
+    border: 2px solid rgb(181, 249, 84);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.innerDiv h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.inOut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.guesses{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.input{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#in{
+    scrollbar-width: none;
+}
+
+.input span{
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.inputBox{
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    text-align: center;
+    background-color: #152423;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}  
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}       
+
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#resultBtn,#resetBtn{
+    width: 25%;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: #061f41;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.errorMessage{
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    color: red;
+    font-size: 1.1rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    animation: fadeIn 0.1s linear;
+}
+
+@keyframes fadeIn {
+    0% { transform: scale(0.8); }
+    50%{ transform: rotate(8deg);}
+    100% { transform: rotate(0deg); }
+}
