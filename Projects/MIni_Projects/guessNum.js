@@ -43,6 +43,7 @@ resultBtn.addEventListener("click",(e)=>{
     if(userInputValue === randomNumber){
         userNumber.style.display = "none";
         result.innerHTML = "Correct Guess";
+        guessCounter = 5;
         correctGuess();
     }else{
         result.innerHTML = "Wrong Guess";
