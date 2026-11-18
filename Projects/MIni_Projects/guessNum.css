@@ -24,14 +24,14 @@
 .innerDiv{
     width: 50%;
     height: auto;
-    border: 2px solid rgb(181, 249, 84);
+    border: 2px solid #89b4eb;
     border-radius: 8px;
     padding: 20px;
 }
 
 .innerDiv h1{
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 
 .inOut{
@@ -56,7 +56,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 5px;
+    gap: 1rem;
 }
 
 #in{
@@ -70,6 +70,9 @@
 }
 
 .inputBox{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     height: 40px;
     color: #fff;
@@ -79,6 +82,7 @@
     text-align: center;
     background-color: #152423;
 }
+
 
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
@@ -107,14 +111,20 @@ input[type=number] {
     background-color: #061f41;
     color: #fff;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
+
+#resultBtn:hover,#resetBtn:hover{
+    background-color: #0a3b7c;
+    transition: all 0.2s ease-in-out;
+}
+
 .errorMessage{
     display: none;
-    padding: 10px;
+    padding: 20px 80px;
     border-radius: 5px;
     text-align: center;
     color: red;
@@ -126,6 +136,14 @@ input[type=number] {
     top: 50%;
     animation: fadeIn 0.1s linear;
 }
+
+.correctGuess{
+    color: darkgreen;
+    background-color: #ffffff;
+    transform : scale(1.5);
+    transition : all 0.2s ease-in-out;
+}
+
 
 @keyframes fadeIn {
     0% { transform: scale(0.8); }
