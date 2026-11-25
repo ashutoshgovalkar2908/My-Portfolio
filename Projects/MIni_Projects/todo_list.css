@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300;400;500;600;700&family=Piedra&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+    min-height: 100vh;
+    background: linear-gradient( 163deg, #000000, #1c312e);
+    color: #352b23;
+    font-family: "Shantell Sans", cursive;
+    line-height: 1.5;
+}
+
+button,
+input {
+    font: inherit;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    padding: 56px 20px;
+}
+
+.container h1 {
+    color: #593e2c;
+    font-family: "Piedra", cursive;
+    font-size: clamp(2.5rem, 7vw, 4rem);
+    font-weight: 400;
+    text-align: center;
+}
+
+.infoBox {
+    display: flex;
+    width: min(100%, 620px);
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 24px;
+    border: 1px solid #ead7ba;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.78);
+    box-shadow: 5px 6px 11px 0px rgb(237 237 237 / 20%);
+}
+
+.inputDiv {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+#inputFeild {
+    min-width: 0;
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #cbb99f;
+    border-radius: 9px;
+    background: #fffdf9;
+    color: inherit;
+    font-size: 1rem;
+}
+
+#inputFeild::placeholder {
+    color: #8b7b68;
+}
+
+#inputFeild:focus-visible {
+    border-color: #537b4b;
+    outline: 3px solid rgba(83, 123, 75, 0.2);
+}
+
+button {
+    border: 0;
+    border-radius: 9px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 150ms ease, transform 150ms ease;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+button:focus-visible {
+    outline: 3px solid rgba(53, 89, 46, 0.35);
+    outline-offset: 2px;
+}
+
+.AddOnBtn, .clearAll {
+    padding: 11px 22px;
+    background: #537b4b;
+    color: #fff;
+}
+
+.AddOnBtn:hover {
+    background: #41663a;
+}
+
+.goals {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.goalItem {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px;
+    border: 1px solid #eee1cd;
+    border-radius: 10px;
+    background: #fffaf1;
+}
+
+.goalItem span {
+    min-width: 0;
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.goalItem button {
+    flex-shrink: 0;
+    padding: 7px 11px;
+    font-size: 0.9rem;
+}
+
+.goalItem button:first-of-type {
+    background: #e4efdf;
+    color: #345b2d;
+}
+
+.goalItem button:first-of-type:hover {
+    background: #d3e6cb;
+}
+
+.goalItem button:last-of-type {
+    background: #f7e1dc;
+    color: #8b4035;
+}
+
+.goalItem button:last-of-type:hover {
+    background: #f0cec6;
+}
+
+
+.clearAllBtn {
+    display: none;
+}
+
+
+.clearAllBtn .clearAll {
+    background: #f7e1dc;
+    color: #8b4035;
+}
+
+.clearAllBtn .clearAll:hover {
+    background: #e39c8c;
+}
+
+
+
+@media (max-width: 480px) {
+    .container {
+        gap: 24px;
+        padding: 36px 14px;
+    }
+
+    .infoBox {
+        padding: 16px;
+    }
+
+    .goalItem {
+        flex-wrap: wrap;
+    }
+
+    .goalItem span {
+        flex-basis: 100%;
+    }
+}
